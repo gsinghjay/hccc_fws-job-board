@@ -115,14 +115,16 @@
     </div>
 
     <!-- Job Details Modal -->
-    <div class="modal fade" id="jobModal" tabindex="-1">
+    <div class="modal fade" id="jobModal" tabindex="-1" aria-labelledby="jobModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    <h5 class="modal-title" id="jobModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body"></div>
+                <div class="modal-body">
+                    <!-- Modal content will be dynamically populated -->
+                </div>
             </div>
         </div>
     </div>
@@ -157,6 +159,18 @@
                     card.style.display = matchesSearch && matchesFilter ? 'block' : 'none';
                 });
             }
+
+            const jobModal = document.getElementById('jobModal');
+            const modalTitle = jobModal.querySelector('.modal-title');
+            const modalBody = jobModal.querySelector('.modal-body');
+
+            document.querySelectorAll('.view-details-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const jobCard = this.closest('.job-card');
+                    modalTitle.textContent = jobCard.querySelector('.card-title').textContent;
+                    modalBody.innerHTML = jobCard.querySelector('.job-details').innerHTML;
+                });
+            });
         });
     ]]>
     </script>
@@ -187,7 +201,7 @@
                         </xsl:for-each>
                     </p>
                 </xsl:if>
-                <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#jobModal">
+                <button class="btn btn-primary w-100 view-details-btn" data-bs-toggle="modal" data-bs-target="#jobModal">
                     <i class="bi bi-info-circle me-2"></i>View Details
                 </button>
             </div>
@@ -199,95 +213,86 @@
             </div>
             
             <!-- Hidden job details for modal -->
-            <div class="d-none">
-                <xsl:call-template name="job-details-modal">
-                    <xsl:with-param name="job" select="."/>
-                </xsl:call-template>
-            </div>
-        </div>
-    </div>
-</xsl:template>
+            <div class="job-details d-none">
+                <xsl:if test="description/overview">
+                    <div class="mb-4">
+                        <h6 class="text-primary">
+                            <i class="bi bi-info-circle me-2"></i>Overview
+                        </h6>
+                        <p><xsl:value-of select="description/overview"/></p>
+                    </div>
+                </xsl:if>
 
-<!-- Template for job details in modal -->
-<xsl:template name="job-details-modal">
-    <div class="job-details">
-        <xsl:if test="description/overview">
-            <div class="mb-4">
-                <h6 class="text-primary">
-                    <i class="bi bi-info-circle me-2"></i>Overview
-                </h6>
-                <p><xsl:value-of select="description/overview"/></p>
-            </div>
-        </xsl:if>
+                <xsl:if test="description/responsibilities">
+                    <div class="mb-4">
+                        <h6 class="text-primary">
+                            <i class="bi bi-list-task me-2"></i>Responsibilities
+                        </h6>
+                        <ul class="list-unstyled">
+                            <xsl:for-each select="description/responsibilities/item">
+                                <li class="mb-2">
+                                    <i class="bi bi-check2 me-2"></i>
+                                    <xsl:value-of select="."/>
+                                </li>
+                            </xsl:for-each>
+                        </ul>
+                    </div>
+                </xsl:if>
 
-        <xsl:if test="description/responsibilities">
-            <div class="mb-4">
-                <h6 class="text-primary">
-                    <i class="bi bi-list-task me-2"></i>Responsibilities
-                </h6>
-                <ul class="list-unstyled">
-                    <xsl:for-each select="description/responsibilities/item">
-                        <li class="mb-2">
-                            <i class="bi bi-check2 me-2"></i>
-                            <xsl:value-of select="."/>
-                        </li>
-                    </xsl:for-each>
-                </ul>
-            </div>
-        </xsl:if>
+                <xsl:if test="required_skills|description/requirements">
+                    <div class="mb-4">
+                        <h6 class="text-primary">
+                            <i class="bi bi-star me-2"></i>Required Skills
+                        </h6>
+                        <ul class="list-unstyled">
+                            <xsl:for-each select="required_skills/skill|description/requirements/item">
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle me-2"></i>
+                                    <xsl:value-of select="."/>
+                                </li>
+                            </xsl:for-each>
+                        </ul>
+                    </div>
+                </xsl:if>
 
-        <xsl:if test="required_skills|description/requirements">
-            <div class="mb-4">
-                <h6 class="text-primary">
-                    <i class="bi bi-star me-2"></i>Required Skills
-                </h6>
-                <ul class="list-unstyled">
-                    <xsl:for-each select="required_skills/skill|description/requirements/item">
-                        <li class="mb-2">
-                            <i class="bi bi-check-circle me-2"></i>
-                            <xsl:value-of select="."/>
-                        </li>
-                    </xsl:for-each>
-                </ul>
-            </div>
-        </xsl:if>
+                <xsl:if test="languages">
+                    <div class="mb-4">
+                        <h6 class="text-primary">
+                            <i class="bi bi-translate me-2"></i>Languages
+                        </h6>
+                        <p>
+                            <xsl:for-each select="languages/language">
+                                <span class="badge bg-secondary me-2">
+                                    <xsl:value-of select="."/>
+                                </span>
+                            </xsl:for-each>
+                        </p>
+                    </div>
+                </xsl:if>
 
-        <xsl:if test="languages">
-            <div class="mb-4">
-                <h6 class="text-primary">
-                    <i class="bi bi-translate me-2"></i>Languages
-                </h6>
-                <p>
-                    <xsl:for-each select="languages/language">
-                        <span class="badge bg-secondary me-2">
-                            <xsl:value-of select="."/>
-                        </span>
-                    </xsl:for-each>
-                </p>
+                <div class="contact-info">
+                    <h6 class="text-primary mb-3">
+                        <i class="bi bi-person-lines-fill me-2"></i>Contact Information
+                    </h6>
+                    <p class="mb-2">
+                        <i class="bi bi-person me-2"></i>
+                        <xsl:value-of select="supervisor|contact_person"/>
+                    </p>
+                    <p class="mb-2">
+                        <i class="bi bi-envelope me-2"></i>
+                        <a href="mailto:{contact_email}"><xsl:value-of select="contact_email"/></a>
+                    </p>
+                    <xsl:if test="locations|location">
+                        <p class="mb-0">
+                            <i class="bi bi-geo-alt me-2"></i>
+                            <xsl:for-each select="locations/location|location">
+                                <xsl:value-of select="."/>
+                                <xsl:if test="position() != last()">, </xsl:if>
+                            </xsl:for-each>
+                        </p>
+                    </xsl:if>
+                </div>
             </div>
-        </xsl:if>
-
-        <div class="contact-info">
-            <h6 class="text-primary mb-3">
-                <i class="bi bi-person-lines-fill me-2"></i>Contact Information
-            </h6>
-            <p class="mb-2">
-                <i class="bi bi-person me-2"></i>
-                <xsl:value-of select="supervisor|contact_person"/>
-            </p>
-            <p class="mb-2">
-                <i class="bi bi-envelope me-2"></i>
-                <a href="mailto:{contact_email}"><xsl:value-of select="contact_email"/></a>
-            </p>
-            <xsl:if test="locations|location">
-                <p class="mb-0">
-                    <i class="bi bi-geo-alt me-2"></i>
-                    <xsl:for-each select="locations/location|location">
-                        <xsl:value-of select="."/>
-                        <xsl:if test="position() != last()">, </xsl:if>
-                    </xsl:for-each>
-                </p>
-            </xsl:if>
         </div>
     </div>
 </xsl:template>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="fws_jobs.xslt"?>
 <job_board>
     <on_campus_jobs>
         <job>
@@ -519,80 +520,6 @@
                     <item>Make all required reports</item>
                     <item>Help with various activities</item>
                 </responsibilities>
-            </description>
-        </job>
-
-        <!-- Adding final jobs -->
-        <job>
-            <title>Teacher Aid/Tutor</title>
-            <organization>Angels Learning Center</organization>
-            <pay_rate>16.00</pay_rate>
-            <contact_person>Hector Velasquez</contact_person>
-            <contact_email>angelslearningcenter2801@gmail.com</contact_email>
-            <location>2801 Central Avenue, Union City, New Jersey, 07087</location>
-            <description>
-                <responsibilities>
-                    <item>Assist the teacher with instructions and activities in the classroom</item>
-                    <item>Create activities according to the ages of the students</item>
-                    <item>Keep materials in order</item>
-                    <item>Work independently with students who need personal assistance</item>
-                    <item>Help with cleanliness and order</item>
-                    <item>Collaborate in various activities related to the school</item>
-                </responsibilities>
-            </description>
-        </job>
-
-        <job>
-            <title>Accounting/Finance Intern</title>
-            <organization>Jersey City Housing Authority</organization>
-            <pay_rate>16.00</pay_rate>
-            <contact_person>Michael Strom</contact_person>
-            <contact_email>mstrom@jcha.us</contact_email>
-            <location>400 US Highway 1 Jersey City, NJ 07306</location>
-            <description>
-                <overview>The accounting and finance internship is an entry-level, non-permanent accounting position. The goal is to apply knowledge acquired in the classroom to real-world experience, as well as gain the skills necessary for a successful career in accounting or finance.</overview>
-                <responsibilities>
-                    <item>Assist with gathering back-up support and preparing journal entries</item>
-                    <item>Assist with researching discrepancies</item>
-                    <item>Data entry &amp; work under supervision of other accountants</item>
-                    <item>Assist with the preparation of ad hoc and other internal reports</item>
-                    <item>Testing and supporting inventory functions</item>
-                    <item>Learn how to create Excel Spreadsheets and pivot tables</item>
-                    <item>Support the Accounts Payable Team in payment processing</item>
-                    <item>Filing invoices, shredding, and organizing accounts payable file room</item>
-                </responsibilities>
-                <requirements>
-                    <item>No experience required</item>
-                    <item>Committed and eager to gain work experience</item>
-                    <item>Able to work independently and in a team environment</item>
-                    <item>Basic Computer Skills preferred</item>
-                    <item>Interested community college students in business or accounting programs preferred, but not exclusive</item>
-                </requirements>
-            </description>
-        </job>
-
-        <job>
-            <title>Workforce Development Intern</title>
-            <organization>Jersey City Housing Authority - RECE Department</organization>
-            <pay_rate>16.00</pay_rate>
-            <contact_person>Michael Strom</contact_person>
-            <contact_email>mstrom@jcha.us</contact_email>
-            <location>400 US Highway 1 Jersey City, NJ 07306</location>
-            <description>
-                <overview>This is an opportunity for a data-driven, community-oriented student to support the workforce development initiatives of the Resident Empowerment &amp; Community Engagement (RECE) department at Jersey City Housing Authority (JCHA).</overview>
-                <responsibilities>
-                    <item>Assisting in outreach events to provide workforce development signups</item>
-                    <item>Calling/texting members of the JCHA Workforce Development signup list</item>
-                    <item>Finding online/in-person resources for career development</item>
-                    <item>Helping populate and maintain resource catalogs</item>
-                    <item>Assisting with development, promotion and performance of Workforce Events</item>
-                </responsibilities>
-                <qualifications>
-                    <item>Ability to travel to office location</item>
-                    <item>Digital skills: Detail oriented, tech savvy and organized</item>
-                    <item>Strong communication skills</item>
-                    <item>Personal motivation and resourcefulness</item>
-                </qualifications>
             </description>
         </job>
     </on_campus_jobs>

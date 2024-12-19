@@ -1,0 +1,2526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/patterns.xsl" title="HTML" extension="html"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	<ouc:info><tcf><!--%echo var="tcfname" --></tcf><tmpl>interior.tmpl</tmpl></ouc:info>
+
+	<ouc:properties label="metadata">
+		<title>Federal Work Study Job Board | Student Employment Federal Work Study | Financial Aid | Paying for College | Hudson County Community College</title>
+		<meta name="Description" content="Explore the Federal Work-Study job board at Hudson County Community College, where eligible students can find part-time job opportunities available on campus. This page provides a list of current openings, application instructions, and tips for securing a work-study position. Discover how to gain valuable work experience while earning money to support your education." />
+		<meta name="Keywords" content="&quot;HCCC&quot; &quot;Federal Work-Study&quot; &quot;job board&quot; &quot;student employment&quot; &quot;financial aid&quot; &quot;work experience&quot; &quot;Part-Time Jobs&quot; &quot;campus employment opportunities&quot; &quot;Financial Aid&quot; &quot;Student job listings&quot; " />
+	</ouc:properties>
+
+	<ouc:properties label="config">		
+		<parameter group="Everyone" type="filechooser" name="banner-src" dependency="yes" section="Page Options" prompt="Banner Background Image" alt="Choose an image to use for the banner.">{{f:40705892}}</parameter>
+		<parameter group="Everyone" type="text" name="heading" prompt="Page Heading" alt="Please enter the page heading.">Federal Work Study Job Board</parameter>
+		<parameter group="Everyone" type="text" name="breadcrumb" prompt="Breadcrumb" alt="Please enter the breadcrumb text. This is not used on index pages.">Federal Work Study Job Board</parameter>
+		<parameter group="Everyone" type="textarea" row="3" name="intro" prompt="Introductory Text" alt="Please enter the introductory text.">The job postings on the Federal Work-Study Job Board aim to offer job opportunities to students in line with their educational and career interests, following ED's guidance on publicly posting FWS employment positions. Please note that the application and hiring process is ongoing, and there is no guarantee of an open position if a student is hired for the role.</parameter>
+	</ouc:properties>
+
+	<ouc:properties label="layout">
+		<parameter group="Everyone" type="checkbox" name="sidebar" section="Layout Options" prompt="Sidebar Elements" alt="Turn on/off sidebar elements to customize the layout. When all elements are turned off, the page will have a 1-column layout.">
+			<option value="side-navigation" selected="true">Side Navigation</option>
+		</parameter>
+	</ouc:properties>
+
+	<ouc:properties label="meta-tags">
+		<parameter section="Social Meta Tags" name="override-og-type" type="text" group="Everyone" prompt="Og Type" alt="Please enter the open graph type.">Og Type</parameter>
+		<parameter name="override-og-image" type="filechooser" group="Everyone" prompt="Og Image" alt="Please choose the open graph image." dependency="yes">https://www.hccc.edu/paying-for-college/resources/images/student_employment_heading1.jpg</parameter>
+		<parameter name="override-og-image-alt" type="text" group="Everyone" prompt="Og Image Alt" alt="Please enter the open graph image alt text.">Federal Work Study Job Board</parameter>
+		<parameter name="override-og-description" type="textarea" group="Everyone" prompt="Og Description" alt="Please enter the open graph description." rows="7">Explore the Federal Work-Study job board at Hudson County Community College, where eligible students can find part-time job opportunities available on campus. This page provides a list of current openings, application instructions, and tips for securing a work-study position. Discover how to gain valuable work experience while earning money to support your education.</parameter>
+		<parameter name="override-twitter-card-description" type="text" group="Everyone" prompt="Twitter Card Description" alt="Please enter the twitter card description. This description will trimmed at 200 characters per Twitter Documentation. This image size needs to be below 5MB in size per Twitter Documentation.">Explore the Federal Work-Study job board at Hudson County Community College, where eligible students can find part-time job opportunities available on campus. This page provides a list of current openings, application instructions, and tips for securing a work-study position. Discover how to gain valuable work experience while earning money to support your education.</parameter>
+		<parameter name="override-twitter-card-image" type="filechooser" group="Everyone" prompt="Twitter Card Image" alt="Please choose the twitter card image. " dependency="yes">https://www.hccc.edu/paying-for-college/resources/images/student_employment_heading1.jpg</parameter>
+		<parameter name="override-twitter-card-image-alt" type="text" group="Everyone" prompt="Twitter Card Image Alt" alt="Please enter the twitter card image alt text. This alt text will be trimmed at a length of 420 characters per Twitter Documentation.">Federal Work Study Job Board</parameter>
+		<parameter name="override-twitter-card-type" type="select" group="Everyone" prompt="Twitter Card Type" alt="Please choose the twitter card type.">
+			<option value="summary" selected="false">Summary</option>
+			<option value="summary_large_image" selected="true">Summary Large Image</option>
+		</parameter>
+	</ouc:properties>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><h2>Jump To:</h2>
+<ul>
+<li><a title="On-Campus Employment" href="#on-campus">On-Campus Employment</a></li>
+<li><a title="Off-Campus Employment" href="#off-campus">Off-Campus Employment</a></li>
+</ul>
+<h3><a id="on-campus"></a></h3>
+<table class="ou-" data-snippet="ou-accordion"><caption class="mceNonEditable">Accordion</caption>
+<tbody>
+<tr>
+<th colspan="2">Header</th>
+<td colspan="6" data-name="header">On-Campus Employment</td>
+</tr>
+<tr>
+<th colspan="2">Introduction</th>
+<td colspan="6" data-name="intro">Expand each section for pay rate and job description.</td>
+</tr>
+<tr>
+<th class="mceNonEditable" style="width: 35%;" colspan="2">Expand a Panel on Load</th>
+<td colspan="6" data-name="expand-panel" data-type="number">0</td>
+</tr>
+<tr>
+<th class="mceNonEditable" colspan="3">Heading</th>
+<th class="mceNonEditable" colspan="5">Content</th>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Assistant to the Office Assistant - School of Nursing and Health Professionals</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>School of Nursing and Health Professionals</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Assistant to the Office Assistant</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Cheryl Cashell</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:krodriguez@hccc.edu">krodriguez@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Greets students, faculty and staff at front desk. Answers phone inquiries on general information and takes messages that require additional assistance. Redirects higher level inquiries to appropriate administrator to address. Receives and distributes office mail. Maintains supplies by checking stock of office supplies, filling paper to copy machines, printers and fax machines. Delivers confidential inter-office mail/correspondence that is time sensitive. Filing, assisting in copy projects, and maintaining and updating worksheets and documents; prepares materials for meetings and events.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Ability to work independently</li>
+<li>Dependable and punctual</li>
+<li>Excellent organizational skills and attention to detail</li>
+<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+<li>Strong communication skills, both verbal and written</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Office Assistant - Early College Programs</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Early College Programs</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Office Assistant</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Christopher Conzen</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:jwongcastellano@hccc.edu">jwongcastellano@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Greet and assist students, faculty, staff, and visitors.</li>
+<li>Answer and direct phone calls, take messages, and handle inquiries.</li>
+<li>Manage front desk operations, ensuring the area is tidy and presentable.</li>
+<li>Provide general administrative and clerical support, including mailing, scanning, faxing, and copying.</li>
+<li>Maintain and update student records and databases.</li>
+<li>Handle incoming and outgoing correspondence.</li>
+<li>Provide information about college programs, services, and procedures.</li>
+<li>Work collaboratively with other office staff and departments.</li>
+<li>Participate in training sessions and staff meetings.</li>
+<li>Assist with special projects and other duties as assigned.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Ability to handle confidential information with discretion</li>
+<li>Ability to work independently</li>
+<li>Bilingual or multilingual</li>
+<li>Dependable and punctual</li>
+<li>Excellent organizational skills and attention to detail</li>
+<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+<li>Strong communication skills, both verbal and written</li>
+<li>Strong customer service skills</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>Arabic English Spanish</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Office Assistant - School of Nursing &amp; Health Professions</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>School of Nursing &amp; Health Professions</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Office Assistant</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Catherine Sirangelo</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:mwiggins@hccc.edu">mwiggins@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Under supervised direction, provides varied clerical and support services to those in need of support. Participates in special projects, as required/requested.</li>
+</ul>
+<p>Major Position Responsibilities:</p>
+<ul>
+<li>Provides varied support such as clerical office duties relating to the daily operations of the Nursing Department consisting of; typing, filing, scanning, photocopying, faxing, collating materials, distributing information via email, distributing mail, assist w/ preparing clinical packets for clinical sites, preparing admissions packets, types meeting minutes, maintains/receives inventory of office supplies and back-up office support to nursing department administrative assistant when needed.</li>
+<li>Regularly operates standard office equipment such as a computer, photocopier, fax machine, typewriter, telephone system, scanner, printer, copier, etc., in normal course of job activities.</li>
+<li>May utilize word processing equipment and software to input and edit standard text for work area correspondence, reports, and presentations and to format documents and print mass mailings at the request of those supported.</li>
+<li>May input and edit data to pre-established spreadsheets, establish new spreadsheets, format documents, and perform sorts and merges for mass mailings at the request of those supported.</li>
+<li>May access one or more department-specific databases to locate and retrieve information, input and update information, and generate various reports and data lists.</li>
+<li>Interacts with individuals both within and outside of the College to gather, provide, or clarify information related to work activities and work area operations. Projects a positive self-image of professionalism, professional appearance, reliable and responsible, maintains confidentiality, courtesy, conduct, honesty, fairness, and personal integrity at all times.</li>
+<li>May perform other clerical office activities/duties, as needed. Remains flexible and adaptable in work schedules and work assignments as defined by College and departmental needs. Keeps those supported continually aware of both routine and unusual work area situations requiring their prompt attention. Refers questions or issues of complicated nature to a higher level for resolution.</li>
+<li>Office Assistant will be under supervised direction, provides varied clerical and support services, etc. to those in need of support in the Nursing Program. Will also participate in special projects, as required/requested.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Ability to handle confidential information with discretion</li>
+<li>Dependable and punctual</li>
+<li>Excellent organizational skills and attention to detail</li>
+<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+<li>Strong communication skills, both verbal and written</li>
+<li>Strong customer service skills</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>English</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Testing Monitor - Testing &amp; Assessment</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Testing &amp; Assessment</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Testing Monitor</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Darlery Franco</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:dfranco@hccc.edu">dfranco@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Assist with new placement check-in process.</li>
+<li>Monitor testing stations.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Bilingual or multilingual</li>
+<li>Strong communication skills, both verbal and written</li>
+<li>Strong customer service skills</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>Arabic Spanish</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Advancement Office Assistant - Advancement Department</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Advancement Department</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Advancement Office Assistant</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Nicole B. Johnson</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:abonano@hccc.edu">abonano@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Update and create spreadsheets as needed, make phone calls, update and create organizational binders as needed, conduct research, make copies and scans, help with large mailings as needed, and any other supporting duties the office may need.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Ability to work independently</li>
+<li>Dependable and punctual</li>
+<li>Excellent organizational skills and attention to detail</li>
+<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>English</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Library Student Assistant - HCCC Library</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>HCCC Library</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Library Student Assistant</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>John Hernandez</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:jhernandez@hccc.edu">jhernandez@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square North Hudson</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Provide good customer service to library users. Assist students, staff, faculty and alumni with finding and checking out books. Assist with scanning, printing and basic desktop applications. Report user concerns or issues to the appropriate staff person for further assistance. Other tasks as needed.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Ability to work independently</li>
+<li>Bilingual or multilingual</li>
+<li>Dependable and punctual</li>
+<li>Excellent organizational skills and attention to detail</li>
+<li>Strong communication skills, both verbal and written</li>
+<li>Strong customer service skills</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>Arabic English Spanish</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Career and Transfer Ambassador - Career and Transfer Pathways</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Career and Transfer Pathways</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Career and Transfer Ambassador</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Jennifer Valcarcel</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:jvalcarcel@hccc.edu">jvalcarcel@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square North Hudson</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Ability to work independently</li>
+<li>Bilingual or multilingual</li>
+<li>Dependable and punctual</li>
+<li>Excellent organizational skills and attention to detail</li>
+<li>Familiarity with social media platforms</li>
+<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+<li>Strong communication skills, both verbal and written</li>
+<li>Strong customer service skills</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>Arabic English Spanish</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Customer Service Representative - Continuing Education &amp; Workforce Development</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Continuing Education &amp; Workforce Development</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Customer Service Representative</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Lori Margolin</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:amuniz@hccc.edu">amuniz@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square North Hudson</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Provide Continuing Education program information to current and prospective students and the general public as well as other programs and services offered by HCCC that exist for both credit and non-credit.</li>
+<li>Provide registration services to Continuing Education students; assist students in completing and processing forms and records required by the College.</li>
+<li>Safeguard student information and documents consistent with College policies and FERPA guidelines.</li>
+<li>Participate in Continuing Education and College events, recruiting outings, workshops and fairs as needed.</li>
+<li>Participate in team briefings and keep updated on current course offerings, procedures and program changes.</li>
+<li>Learn about the different Continuing Education offerings by attending classes as needed.</li>
+<li>Work closely with program coordinators to support the creation of new and existing courses.</li>
+<li>Contact students to inform of schedule changes and/or class cancellations.</li>
+<li>Complete data entry and other daily tasks consistent with the policies and processes of the College and Continuing Education.</li>
+<li>Remain flexible and adaptable in work schedules and work assignments as defined by the College and departmental needs.</li>
+<li>Travel to both our Journal Square and North Hudson offices.</li>
+<li>Perform other related activities as required.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Ability to handle confidential information with discretion</li>
+<li>Ability to work independently</li>
+<li>Bilingual or multilingual</li>
+<li>Dependable and punctual</li>
+<li>Excellent organizational skills and attention to detail</li>
+<li>Familiarity with social media platforms</li>
+<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+<li>Strong communication skills, both verbal and written</li>
+<li>Strong customer service skills</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>Arabic English Spanish</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Gallery Assistant - Office of Cultural Affairs</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Office of Cultural Affairs</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Gallery Assistant</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Michelle Vitale</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:Mvitale@hccc.edu">Mvitale@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square North Hudson</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Gallery Assistants need to be dependable and punctual to assist in creating a warm and welcoming environment to HCCC students and community. Assistants are also expected to help with events, exhibit installations, and programs.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Ability to work independently</li>
+<li>Dependable and punctual</li>
+<li>Other (Please type skills set in the box below)</li>
+<li>Strong communication skills, both verbal and written</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>English</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Office of Accessibility Services Work Study - Office of Accessibility Services</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Office of Accessibility Services</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Office of Accessibility Services Work Study</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Danielle Lopez</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:dlopez@hccc.edu">dlopez@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Answering telephones calls</li>
+<li>Assisting with examination proctoring</li>
+<li>Readind and writing for students with disabilities</li>
+<li>Basic data entry</li>
+<li>Assist with developing special programs</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Ability to handle confidential information with discretion</li>
+<li>Dependable and punctual</li>
+<li>Familiarity with social media platforms</li>
+<li>Strong communication skills, both verbal and written</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Theatre Arts Lab Assistant - Humanities and Social Sciences</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Humanities and Social Sciences</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Theatre Arts Lab Assistant</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>16.0</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Dr. Alison Wakefield</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:breyes@hccc.edu">breyes@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Student will help coordinate classroom configurations, slides and videos, run the lighting and sound boards, and assist in all acting exercises.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Ability to work independently</li>
+<li>Dependable and punctual</li>
+<li>Excellent organizational skills and attention to detail</li>
+<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>English</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Peer Advisor - Advisement</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Advisement</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Peer Advisor</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Gretchen Schulthes</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:aadler@hccc.edu">aadler@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square North Hudson</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Clerical support who can assist with general office duties, including answering phones, copying and scanning documents, maintain records, filing, responding to emails and performing additional administrative duties as required. The successful applicant will be the front-end representative therefore must have a polite and friendly disposition, and be readily available to greet guests and direct them as necessary.</li>
+<li>Basic to average ability/skills required: computer literate, organized, good communication skills. Average to extensive ability/skills: may include answering questions about department function, product or service; getting information about student records, resolve product or service problems.</li>
+<li>Requires product knowledge, good listening and communication skills. Ability to work well in a team environment.</li>
+<li>Duties and Responsibilities:</li>
+<li>Maintain Student and staff confidentiality (REQUIRED). Answer phones, filing/sorting/organizing, travelling around campus/between campuses, Customer Service, using the copy machine, using Microsoft office software: word, excel, PowerPoint, outlook for projects. Provide assistance to the Associate Dean, Directors, Counselors, Office Assistants, and Secretary. Perform additional duties as assigned by staff members within the advisement and counseling center.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Ability to handle confidential information with discretion</li>
+<li>Ability to work independently</li>
+<li>Dependable and punctual</li>
+<li>Excellent organizational skills and attention to detail</li>
+<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+<li>Strong communication skills, both verbal and written</li>
+<li>Strong customer service skills</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>Arabic Chinese English French Spanish</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Web Administrator - Advancement/Communications</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Advancement/Communications</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Web Administrator</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>16.0</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Nicole B. Johnson</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:kfontanez@hccc.edu">kfontanez@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<p>The Web Services team is seeking two candidates to be a Web Administrator who are able to work general maintenance of the HCCC public website between the active work hours of 9AM to 5PM. Time is flexible depending on student schedules but must be committed to working the allotted time available per week.</p>
+<p>Web Administrator responsibilities will include:</p>
+<ul>
+<li>Updating HCCC webpages with content.</li>
+<li>General maintenance across webpages.</li>
+<li>Troubleshoot issues that occur on webpages.</li>
+<li>Fix broken links.</li>
+<li>Updating webpages for minor QoL (Quality of Life) features to improve accessibility.</li>
+<li>Submit reports to the supervisor for general status updates and changes made throughout the website.</li>
+<li>Perform additional web-related duties as required by the Manager of Web and Portal Services.</li>
+<li>The chosen candidates will work at the Journal Square campus in C/D Building (162-168 Sip Ave.) in Room 232 and will work closely with the Manager of Web and Portal Services.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Ability to handle confidential information with discretion</li>
+<li>Ability to work independently</li>
+<li>Dependable and punctual</li>
+<li>Excellent organizational skills and attention to detail</li>
+<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+<li>Strong communication skills, both verbal and written</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>English</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>FWS Front Desk Reception / Office Assistant - RN Nursing Program</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>RN Nursing Program</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>FWS Front Desk Reception / Office Assistant</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Lori Byrd</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:lvega@hccc.edu">lvega@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Acts as the FWS Front Desk / Office Assistant for the Nursing Program&rsquo;s Reception area. Answers phones, greets visitors, directs visitor's and guests appropriately and maintains reception area. FWS Front Desk / Office Assistant is the first point of contact for the RN Nursing Program. A Professional appearance and a friendly welcoming demeanor is required at all times.</li>
+</ul>
+<p>DUTIES &amp; RESPONSIBILITIES:</p>
+<ul>
+<li>FWS Front Desk / Office Assistant can work any hours from 4 to 10 hours per week or more as long as it does not interfere with class schedules (cannot exceed 20 hours per week), for the Front Desk or other clerical areas assigned during the fall &amp; spring semesters.</li>
+<li>FWS Front Desk / Office Assistant should always maintain a pleasant demeanor and will greet and direct visitors appropriately.</li>
+<li>FWS Front Desk / Office Assistant will answers the telephone in a professional manner, screen telephone calls, take full &amp; complete messages, and directs calls in a quick and efficient manner.</li>
+<li>FWS Front Desk / Office Assistant will interact professionally with all visitors, faculty, staff and administrators within the nursing department, as well as other departments at HCCC as well.</li>
+<li>FWS Front Desk / Office Assistant will assist with typing correspondence, editing documents, filing documents into folders, making photocopies, create address labels in WORD, assist with putting paperwork in alpha order and organizing nursing binders, assist with mass mailings of brochures, forms, flyers, etc.</li>
+<li>FWS Front Desk / Office Assistant will complete other clerical duties as assigned when needed.</li>
+<li>FWS Front Desk / Office Assistant will uphold the Rules and Regulations of the RN Nursing Program as defined in the HCCC Student Handbook, in the RN Nursing Rules &amp; Office Etiquette handout and as well as in the FWS Program Student Handbook.</li>
+<li>FWS Front Desk / Office Assistant should be Customer Service Oriented.</li>
+<li>FWS Front Desk / Office Assistant calls to the attention of their immediate Supervisor, which is the lead Administrative Assistant of the RN Nursing Program, any emergency situation that requires immediate attention when necessary.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Ability to handle confidential information with discretion</li>
+<li>Ability to work independently</li>
+<li>Bilingual or multilingual</li>
+<li>Dependable and punctual</li>
+<li>Excellent organizational skills and attention to detail</li>
+<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+<li>Strong communication skills, both verbal and written</li>
+<li>Strong customer service skills</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>English Spanish</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Classroom/Lab Assistant - Humanities and Social Sciences</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Humanities and Social Sciences</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Classroom/Lab Assistant</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>16.00</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Dr. Wakefield</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:breyes@hccc.edu">breyes@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Student will help coordinate classroom configurations, slides and videos, run the lighting and sound boards, and assist in all acting exercises.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Ability to handle confidential information with discretion</li>
+<li>Ability to work independently</li>
+<li>Bilingual or multilingual</li>
+<li>Dependable and punctual</li>
+<li>Excellent organizational skills and attention to detail</li>
+<li>Familiarity with social media platforms</li>
+<li>Other (Please type skills set in the box below)</li>
+<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+<li>Strong communication skills, both verbal and written</li>
+<li>Strong customer service skills</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>English Spanish</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Education Department Tutor - Humanitites and Social Sciences/Education</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Humanitites and Social Sciences/Education</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Education Department Tutor</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>16.00</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Dr. Alison Wakefield</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:breyes@hccc.edu">breyes@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Work one-on-one with Education majors to support them in their coursework at HCCC.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Lead Scholar - Advisement</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Advisement</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Lead Scholar</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Gretchen Schulthes</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:aadler@hccc.edu">aadler@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Ability to handle confidential information with discretion</li>
+<li>Ability to work independently</li>
+<li>Dependable and punctual</li>
+<li>Excellent organizational skills and attention to detail</li>
+<li>Familiarity with social media platforms</li>
+<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+<li>Strong communication skills, both verbal and written</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Support Staff/Clerical - Hudson Helps</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Hudson Helps</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Support Staff/Clerical</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Ariana Calle</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:acalle@hccc.edu">acalle@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>PT Office Clerk - Business, Culinary Arts and Hospitality Management</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Business, Culinary Arts and Hospitality Management</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>PT Office Clerk</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Ara Karakashian</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:smoise@hccc.edu">smoise@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Ability to handle confidential information with discretion</li>
+<li>Ability to work independently</li>
+<li>Bilingual or multilingual</li>
+<li>Dependable and punctual</li>
+<li>Excellent organizational skills and attention to detail</li>
+<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+<li>Strong communication skills, both verbal and written</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Ability to handle confidential information with discretion</li>
+<li>Ability to work independently</li>
+<li>Bilingual or multilingual</li>
+<li>Dependable and punctual</li>
+<li>Excellent organizational skills and attention to detail</li>
+<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+<li>Strong communication skills, both verbal and written</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>English Spanish</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>FWS Multimedia Design Asssitant - Center for Online Learning</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Center for Online Learning</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>FWS Multimedia Design Asssitant</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Matt LaBrake</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:cmckeown@hccc.edu">cmckeown@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<p>We seek a talented and motivated work-study student to join our team as a Multimedia Design Assistant. This position is ideal for students who are passionate about graphic design and eager to gain hands-on experience in a professional setting. The chosen candidate will have chances to work on various projects supporting COL's promotional activities and course content development. Reporting to the COL's Instructional Multimedia Specialist, this role requires creativity and attention to detail to thrive.</p>
+<p>Responsibilities:</p>
+<ul>
+<li>Create graphics and flyers to support COL event promotions.</li>
+<li>Assist in developing PowerPoint presentations for faculty and staff and ensure compliance with accessibility standards.</li>
+<li>Review and edit captions to make audio/video content accurate and accessible.</li>
+<li>Design visually appealing cover artwork for videos and lecture presentations.</li>
+<li>Assist with basic video editing tasks to support video lecture projects</li>
+<li>Collaborate with the Center for Online Learning team to ensure all designs align with the university's branding guidelines.</li>
+<li>Provide additional support to the Center of Online Learning team as needed.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>English</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Oral History project Intern - Hudson Oral History Project (under School of Humanities and Soc Sci)</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Hudson Oral History Project (under School of Humanities and Soc Sci)</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Oral History project Intern</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>16.0</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Alison Wakefield</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:ekamali@hccc.edu">ekamali@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>The Oral History Project Intern will work closely with our team to support the creation of an oral history project at Hudson County Community College. The intern will be responsible for a range of administrative and technical tasks depending on their skills and past experience. This is an exciting opportunity for someone who is interested in learning more about oral history and community engagement.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Strong communication skills, both verbal and written</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>English</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Teacher Assistants - ESL</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>ESL</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Teacher Assistants</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>16.0</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Alison Wakefield</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:tahmad@hccc.edu">tahmad@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square North Hudson</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>To assist the teachers and students during lecture ESL classes.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>English</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Chemistry and Biology Lab Assistant - School of STEM</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>School of STEM</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Chemistry and Biology Lab Assistant</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>16.0</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Burl Yearwood</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:ffayyaz@hccc.edu">ffayyaz@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square North Hudson</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Assist the lab technician with the preparation of biology and chemistry labs. Conduct inventory of chemical solutions and equipment, glassware washing, and general lab maintenance.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Ability to work independently</li>
+<li>Strong communication skills, both verbal and written</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>English</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Office Assistant - Workforce Development (CEWD)</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Workforce Development (CEWD)</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Office Assistant</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Lori Margolin</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:jalvarez@hccc.edu">jalvarez@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Ability to handle confidential information with discretion</li>
+<li>Ability to work independently</li>
+<li>Dependable and punctual</li>
+<li>Excellent organizational skills and attention to detail</li>
+<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+<li>Strong communication skills, both verbal and written</li>
+<li>Strong customer service skills</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>Arabic English Spanish</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Office Assistant - Academic Support Services</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Academic Support Services</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Office Assistant</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Kenny Fabara</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:kfabara@hccc.edu">kfabara@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Perform office duties such as copying documents and answering phones</li>
+<li>Greet and assist students with scheduling appointments for tutoring or tutoring related inquiries</li>
+<li>Provide technical support to students using our language-learning software</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Ability to work independently</li>
+<li>Bilingual or multilingual</li>
+<li>Strong communication skills, both verbal and written</li>
+<li>Strong customer service skills</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>Arabic English Spanish</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>EOF Academic Practice Professional (Tutor) - EOF</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>EOF</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>EOF Academic Practice Professional (Tutor)</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>16.0</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Dr. Jose Lowe</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:tparekh@hccc.edu">tparekh@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square North Hudson</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<p>Tutors are responsible for helping students bridge gaps in comprehension in subject content. They assess, assist, and encourage students throughout the learning processes. These professionals also review materials used in classes, explain various topics, and answer any questions regarding that topic. Their functions are a supplementation to classroom teaching.</p>
+<p>Tutors perform all of the following:</p>
+<ul>
+<li>Provide study, learning, and time management strategies</li>
+<li>Inform Coordinators of any possible lateness or absence prior to scheduled shift</li>
+<li>Use designated HCCC employee email address as primary method of communication and check HCCC email once a day</li>
+<li>Complete electronic timesheet in a timely manner</li>
+<li>Handle multiple tasks at one time and limit tutoring sessions to no longer than 50 minutes</li>
+<li>Attend mandatory tutor training sessions</li>
+<li>Maintain appropriate ethical and professional conduct while working with EOF Scholars, staff, and faculty and demonstrate respect for the diversity of staff, students, and faculty</li>
+<li>Assist EOF Scholars on a walk-in, one-on-one, or small-group basis</li>
+<li>Maintain accurate records of tutoring sessions</li>
+<li>Develop and help maintain resources for your subject area</li>
+<li>Mentor and train other tutors as requested</li>
+<li>Additional related duties and responsibilities as assigned by the supervisor</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Ability to handle confidential information with discretion</li>
+<li>Ability to work independently</li>
+<li>Bilingual or multilingual</li>
+<li>Dependable and punctual</li>
+<li>Excellent organizational skills and attention to detail</li>
+<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+<li>Strong communication skills, both verbal and written</li>
+<li>Strong customer service skills</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>Arabic English Spanish</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>EOF Peer Leader - EOF</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>EOF</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>EOF Peer Leader</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Dr. Jose Lowe</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:tparekh@hccc.edu">tparekh@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square North Hudson</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>1 hour CSS in-class assistance and facilitation (per CSS class)</li>
+<li>Support EOF Office and Program needs</li>
+<li>Participation in tabling events for EOF Program</li>
+<li>Participation/creation of in topic based workshops for new EOF Scholars</li>
+<li>Hold leadership skills</li>
+<li>Connect with EOF Scholar's during orientations/New HCCC Student orientations</li>
+<li>Hold skills in leadership, event planning, public speaking, and networking</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Ability to handle confidential information with discretion</li>
+<li>Ability to work independently</li>
+<li>Bilingual or multilingual</li>
+<li>Dependable and punctual</li>
+<li>Excellent organizational skills and attention to detail</li>
+<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+<li>Strong communication skills, both verbal and written</li>
+<li>Strong customer service skills</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>Arabic English Spanish</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Support Analyst - Information Technology Services</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Information Technology Services</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Support Analyst</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Patricia Clay</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:kmelewski@hccc.edu">kmelewski@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square North Hudson</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<p>Support Analyst is required to interact with all levels of employees, management, students, and vendors.</p>
+<p>The successful candidate will provide telephone, face-to-face, and online support for computer hardware and software support across all campus locations, following existing installation and troubleshooting guidelines.</p>
+<p>Ensuring the safety of the College&rsquo;s computer systems in accordance with existing security policies is essential.</p>
+<p>Additionally, the Support Analyst maintains and updates the inventory of computer hardware and software.</p>
+<p>The successful candidate will maintain a ticket request log, including updating user requests, work performed, and resolution. Performs other related technical support activities, as required.</p>
+<p>Participates in special projects, as required. Remains flexible and adaptable to work schedules and work assignments as defined by organizational and department needs.</p>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Ability to work independently</li>
+<li>Dependable and punctual</li>
+<li>Excellent organizational skills and attention to detail</li>
+<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+<li>Strong communication skills, both verbal and written</li>
+<li>Strong customer service skills</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Support Staff/Clerical - Enrollment Services</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Enrollment Services</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Support Staff/Clerical</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Lisa Dougherty</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:wzahur@hccc.edu">wzahur@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Customer service</li>
+<li>Scanning</li>
+<li>Assisting with phones</li>
+<li>filing</li>
+<li>other administrative tasks</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Dependable and punctual</li>
+<li>Excellent organizational skills and attention to detail</li>
+<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+<li>Strong customer service skills</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>English</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Support Staff/Clerical - Office of DEI</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Office of DEI</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Support Staff/Clerical</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Yeurys Pujols</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:jdelemos@hccc.edu">jdelemos@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>- Answering telephone calls</li>
+<li>- Assisting with examination proctoring</li>
+<li>- Reading and writing for students with disabilities</li>
+<li>- Basic data entry</li>
+<li>- Assist with developing special programs</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Strong communication skills, both verbal and written</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>Arabic English Spanish</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Support Staff/Clerical - North Hudson Campus</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>North Hudson Campus</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Support Staff/Clerical</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Joseph Caniglia</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:dgalvez@hccc.edu">dgalvez@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>North Hudson</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Effectively communicate with students and potential students from diverse backgrounds and needs, about college policies and procedures while adhering to government regulations. This includes all enrollment services and academic affairs information.</li>
+<li>Create a smooth and effective office environment in which students', faculty's, and staff's needs are met with satisfaction; handle all technical, clerical, and/or maintenance problems that pertain to the NHC Administrative Offices.</li>
+<li>Assist Execuetive and Associate Director with NHC mentorship program.</li>
+<li>Assist Associate Director with professional development events on campus.</li>
+<li>Provide campus tours.</li>
+<li>Provide assistance to the Assistant Support Specialist of the North Hudson Campus.</li>
+<li>Other tasks as assigned.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Ability to handle confidential information with discretion</li>
+<li>Bilingual or multilingual</li>
+<li>Dependable and punctual</li>
+<li>Familiarity with social media platforms</li>
+<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+<li>Strong communication skills, both verbal and written</li>
+<li>Strong customer service skills</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>Arabic English Spanish</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Customer Service - Student Life and Leadership</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Student Life and Leadership</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Customer Service</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Angela Tuzzo</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:atuzzo@hccc.edu">atuzzo@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Answer telephones, Create flyers, event promotion, marketing and social media creation and assistance</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Ability to handle confidential information with discretion</li>
+<li>Ability to work independently</li>
+<li>Dependable and punctual</li>
+<li>Excellent organizational skills and attention to detail</li>
+<li>Familiarity with social media platforms</li>
+<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+<li>Strong communication skills, both verbal and written</li>
+<li>Strong customer service skills</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>English</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Support Staff/Clerical - Academic Affairs</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Academic Affairs</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Support Staff/Clerical</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Darryl Jones</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:lguastini@hccc.edu">lguastini@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Assist Academic Affairs Office with various office duties. Front desk coverage. Special projects. Other assignments as needed.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Dependable and punctual</li>
+<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+<li>Strong communication skills, both verbal and written</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Customer Service - Financial Aid</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Financial Aid</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Customer Service</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Sylvia Mendoza</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:saitouakrim@hccc.edu">saitouakrim@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>North Hudson</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Provide information to students about financial aid and their file completion. Speak to students in a friendly and patient manner. Provide input to the department about how to best serve students. Enter notes and comments into the financial aid system. Be able to work as a team. Be able to answer emails and text messages.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<ul>
+<li>Ability to handle confidential information with discretion</li>
+<li>Ability to work independently</li>
+<li>Bilingual or multilingual</li>
+<li>Dependable and punctual</li>
+<li>Excellent organizational skills and attention to detail</li>
+<li>Familiarity with social media platforms</li>
+<li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+<li>Strong communication skills, both verbal and written</li>
+<li>Strong customer service skills</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>Arabic Chinese English French Spanish</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">
+<p>Support Staff/Clerical - Office of Diversity, Equity &amp; Inclusion</p>
+</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of School/Office/Department</td>
+<td>Office of Diversity, Equity &amp; Inclusion</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Support Staff/Clerical</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>15.13</td>
+</tr>
+<tr>
+<td>Head of School/Office/Department</td>
+<td>Yeurys Pujols</td>
+</tr>
+<tr>
+<td>School/Office/Department Contact Email</td>
+<td><a href="mailto:rwalker@hccc.edu">rwalker@hccc.edu</a></td>
+</tr>
+<tr>
+<td>Please indicate which campus(es)</td>
+<td>Journal Square</td>
+</tr>
+<tr>
+<td>Job Description and Responsibilities</td>
+<td>
+<ul>
+<li>Filing documents, Answering the phone, Reviewing materials, Attending programs, Making copies, Light research on the computer e.g., Google searches</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>FWS Student Employee Required Skill Set</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="off-campus"></a></h3>
+<table class="ou-" data-snippet="ou-accordion"><caption class="mceNonEditable">Accordion</caption>
+<tbody>
+<tr>
+<th colspan="2">Header</th>
+<td colspan="6" data-name="header">Off-Campus Employment</td>
+</tr>
+<tr>
+<th colspan="2">Introduction</th>
+<td colspan="6" data-name="intro">Expand each section for pay rate and job description.</td>
+</tr>
+<tr>
+<th class="mceNonEditable" style="width: 35%;" colspan="2">Expand a Panel on Load</th>
+<td colspan="6" data-name="expand-panel" data-type="number">0</td>
+</tr>
+<tr>
+<th class="mceNonEditable" colspan="3">Heading</th>
+<th class="mceNonEditable" colspan="5">Content</th>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">Workforce Development Intern - RECE Department at Jersey City Housing Authority</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of Organization</td>
+<td>Jersey City Housing Authority</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Workforce Development Intern - RECE Department at JCHA</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>$16.00</td>
+</tr>
+<tr>
+<td>Organization Contact Person</td>
+<td>Michael Strom</td>
+</tr>
+<tr>
+<td>Email Address Contact</td>
+<td><a href="mailto:mstrom@jcha.us">mstrom@jcha.us</a></td>
+</tr>
+<tr>
+<td>Where is the Organization located?</td>
+<td>400 US Highway 1 Jersey City, NJ 07306</td>
+</tr>
+<tr>
+<td>Job description and responsibilities</td>
+<td>
+<p>Overview of position:&nbsp;<br />This is an opportunity for a data-driven, community-oriented student to support the workforce development initiatives of the Resident Empowerment &amp; Community Engagement (RECE) department at Jersey City Housing Authority (JCHA). RECE directly supports 14,000 public housing residents and voucher holders while also hosting broader initiatives &ndash; virtual expos, health &amp; wellness fairs, &amp; worker registration drives &ndash; open to the wider community. Resources compiled and shared by the workforce development team are updated regularly and directly shared with over 800 individuals every two weeks (https://bit.ly/jcareacurrentopps). This internship will provide hands-on experience with community outreach, career development soft skills, data analysis, partnership &amp; networking, resource management, and the lattice of support services available in the Jersey City area.&nbsp;<br />Responsibilities/Duties/Projects:&nbsp;<br />&bull; Assisting in outreach events to provide workforce development signups as well as on-the-spot resume support, referrals to programs, and career development plans&nbsp;<br />&bull; Calling/texting members of the JCHA 500+ Workforce Development signup list to administer surveys and check on progress&nbsp;<br />&bull; Finding online/in-person resources for career development and testing out existing models&nbsp;<br />&bull; Helping populate and maintain resource catalogs, update workforce specific RECE webpages as needed, and develop bi-weekly workforce advancement email blasts&nbsp;<br />&bull; Assisting with development, promotion and performance of Workforce Events, including (but not limited to) virtual Job &amp; Training expos, career development workshops, workforce training info sessions, etc.&nbsp;<br />&bull; Verification and quality standards proofing for construction project Employment &amp; Contracting Opportunities plan documentation&nbsp;<br />&bull; Experience with resume writing best practices and critiquing methods&nbsp;</p>
+<p>Qualifications/Desired Majors:&nbsp;<br />o Ability to travel to office location at 400 US 1, Jersey City, New Jersey and other JCHA site locations throughout Jersey City<br />o Digital skills: Detail oriented, tech savvy and organized, familiarity with google drive, Microsoft OneDrive, excel, PowerPoint, Canva and docs is a plus. &nbsp;<br />o Strong communication skills and patience while speaking with clients and community partners is essential<br />o Personal motivation, resourcefulness and a passion for learning are a must<br />o Majors of interest include but are not limited to: Communications; Civics &amp; Government; Marketing; Business; Entrepreneurship; Human Resources; Sociology</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">Executive Office Work-Study - Jersey City Housing Authority</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of Organization</td>
+<td>Jersey City Housing Authority</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Executive Office Work-Study</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>$16.00</td>
+</tr>
+<tr>
+<td>Organization Contact Person</td>
+<td>Michael Strom</td>
+</tr>
+<tr>
+<td>Email Address Contact</td>
+<td><a href="mailto:mstrom@jcha.us">mstrom@jcha.us</a></td>
+</tr>
+<tr>
+<td>Where is the Organization located?</td>
+<td>400 US Highway 1 Jersey City, NJ 07306</td>
+</tr>
+<tr>
+<td>Job description and responsibilities</td>
+<td>
+<p>Position Overview:<br />The Jersey City Housing Authority (JCHA) is seeking a dedicated and organized intern to join our Executive Team. This entry-level position is ideal for a community college student interested in gaining practical experience in public administration and community development. The intern will provide essential support to the Executive Team, assisting with a variety of tasks that contribute to the smooth operation of the organization.<br />Key Duties and Responsibilities:<br />&bull; Administrative Support: Assist with general office duties, such as answering phones, filing documents, organizing office supplies, and preparing meeting materials.<br />&bull; Document Preparation: Help draft and format basic correspondence, memos, and reports. Assist in the creation of presentation materials using Microsoft Office Suite.<br />&bull; Meeting Coordination: Schedule meetings, send out invitations, and assist with the preparation of meeting spaces. Take notes during meetings and distribute summaries to attendees.<br />&bull; Event Assistance: Support the planning and execution of small events, such as staff meetings, workshops, and community outreach activities. Help with logistics, setup, and participant coordination.<br />&bull; File Management: Organize and maintain both physical and digital files, ensuring that records are easily accessible and up-to-date.<br />&bull; Communication: Assist in drafting emails, making phone calls, and distributing internal communications to staff and residents.<br />&bull; Data Entry: Input basic data into spreadsheets and databases, ensuring accuracy and attention to detail. Assist with maintaining records related to housing applications, resident inquiries, and other administrative tasks.<br />&bull; Other Duties: Perform additional duties as assigned by the Executive Team, which may include tasks such as photocopying, scanning documents, and other office support activities.<br />Qualifications:<br />&bull; Education: Currently enrolled in a community college program, including but not limited to Public Administration, Business Administration, Communications or a related field.<br />&bull; Skills: Basic knowledge of Microsoft Office (Word, Excel, PowerPoint). Strong organizational and communication skills.<br />&bull; Attributes: Reliable, detail-oriented, and eager to learn. Ability to follow instructions and work both independently and as part of a team.<br />&bull; Experience: No prior experience is required, but any experience in an office setting or with customer service is a plus.<br />Experiential Education:<br />&bull; Professional Experience: Gain hands-on experience in a public sector environment through immersion into the executive office of NJ&rsquo;s second largest housing authority.<br />&bull; Mentorship: Work closely with experienced professionals who can provide guidance and support as you develop your career skills.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">Accounting &amp; Finance Work-study at JCHA - Jersey City Housing Authority</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of Organization</td>
+<td>Jersey City Housing Authority</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Accounting &amp; Finance Work-study at JCHA</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>$16.00</td>
+</tr>
+<tr>
+<td>Organization Contact Person</td>
+<td>Michael Strom</td>
+</tr>
+<tr>
+<td>Email Address Contact</td>
+<td><a href="mailto:mstrom@jcha.us">mstrom@jcha.us</a></td>
+</tr>
+<tr>
+<td>Where is the Organization located?</td>
+<td>400 US Highway 1 Jersey City, NJ 07306</td>
+</tr>
+<tr>
+<td>Job description and responsibilities</td>
+<td>
+<p>DESCRIPTION: The accounting and finance internship is an entry-level, non- permanent accounting position. The goal of an internship in accounting and finance is to apply knowledge acquired in the classroom to real-world experience, as well as gain the skills and experience that is necessary to prepare the student for a successful career in accounting or finance. Also this is to gain experience in an office setting providing support to our Accounting &amp; Finance Department.</p>
+<p>During the program, interns will work directly with the assigned mentor to provide day to day administrative support, general office duties and several major related projects.</p>
+<p>&bull; Assist with gathering back-up support and preparing of journal entries<br />&bull; Assist with researching discrepancies<br />&bull; Data entry &amp; work under supervision of other accountants<br />&bull; Assist with the preparation of ad hoc and other internal reports<br />&bull; Testing and supporting inventory functions<br />&bull; Will learn how to create Excel Spread sheets and pivot tables<br />&bull; Support the Accounts Payable Team in payment processing<br />&bull; Filing invoices, shredding, and organizing accounts payable file room</p>
+<p><br />SKILLS AND EXPERIENCE: No experience required. Committed and eager to gain work experience; able to work independently and in a team environment. Basic Computer Skills preferred. &nbsp;Interested community college students in business or accounting programs preferred, but not exclusive.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">Teacher Aid/Tutor - Hold My Hand Day Care Center</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of Organization</td>
+<td>Hold My Hand Day Care Center</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Teacher Aid/Tutor</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>$16.00</td>
+</tr>
+<tr>
+<td>Organization Contact Person</td>
+<td>Gustavo Jaramillo</td>
+</tr>
+<tr>
+<td>Email Address Contact</td>
+<td><a href="mailto:imporjar@hotmail.com">imporjar@hotmail.com</a></td>
+</tr>
+<tr>
+<td>Where is the Organization located?</td>
+<td>301 23rd Street. Union City NJ 07087</td>
+</tr>
+<tr>
+<td>Job description and responsibilities</td>
+<td>
+<p>Providing a better service to the parents in our community.A reading tutor for children in preschool or elementary school or in a family literacy program that provides services for children from infancy through elementary school, their parents, and their caregivers. More supervision, activities, and personalized support to the children's needs.Assisted the teachers in the classrooms, organized materials, and prepared activities for children. Making all required reports, helping the kids in any activity, etc.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">Teacher Aid/Tutor - Learn &amp; Grow Day Care Center II</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of Organization</td>
+<td>Learn &amp; Grow Day Care Center II</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Teacher Aid/Tutor</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>$16.00</td>
+</tr>
+<tr>
+<td>Organization Contact Person</td>
+<td>Gustavo Jaramillo</td>
+</tr>
+<tr>
+<td>Email Address Contact</td>
+<td><a href="mailto:imporjar@hotmail.com">imporjar@hotmail.com</a></td>
+</tr>
+<tr>
+<td>Where is the Organization located?</td>
+<td>165 Hutton St. Jersey City NJ 07307</td>
+</tr>
+<tr>
+<td>Job description and responsibilities</td>
+<td>
+<p>Providing a better service to the parents in our community.A reading tutor for children in preschool or elementary school or in a family literacy program that provides services for children from infancy through elementary school, their parents, and their caregivers. More supervision, activities, and personalized support to the children's needs.Assisted the teachers in the classrooms, organized materials, and prepared activities for children. Making all required reports, helping the kids in any activity, etc.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr data-name="item">
+<td colspan="3" data-name="heading" data-type="text">Teacher Aid/Tutor - Angels Learning Center</td>
+<td colspan="5" data-name="content" data-type="wysiwyg">
+<table>
+<tbody>
+<tr>
+<td>Name of Organization</td>
+<td>Angels Learning Center</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Teacher Aid/Tutor</td>
+</tr>
+<tr>
+<td>Pay Rate</td>
+<td>$16.00</td>
+</tr>
+<tr>
+<td>Organization Contact Person</td>
+<td>Hector Velasquez</td>
+</tr>
+<tr>
+<td>Email Address Contact</td>
+<td><a href="mailto:angelslearningcenter2801@gmail.com">angelslearningcenter2801@gmail.com</a><br /><br /></td>
+</tr>
+<tr>
+<td>Where is the Organization located?</td>
+<td>2801 Central Avenue, Union City ,New Jersey, 07087</td>
+</tr>
+<tr>
+<td>Job description and responsibilities</td>
+<td>
+<p>Assist the teacher with instructions and activities in the classroom. create activities according to the ages of the students, keep materials in order. work independently with students who need personal assistance. Help with cleanliness and order. Collaborate in various activities related to the school.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+{{a:279574}}
+<p>&nbsp;</p>
+{{a:270364}}
+<p>&nbsp;</p></ouc:div>
+
+</document>

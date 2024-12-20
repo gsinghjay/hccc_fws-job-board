@@ -1,0 +1,34 @@
+.hero {
+  min-height: fit-content;
+}
+
+.hero:after {
+  display: none;
+}
+
+.hero:after,
+.hero img {
+  display: none;
+}
+
+.hero-text {
+  display: none;
+}
+
+.hero .wrapper {
+  margin-top: 1em;
+}
+
+.export-controls > a {
+  color: var(--mc-link);
+  border: 0.2em solid;
+}
+
+.export-controls > a:hover {
+  color: black;
+}
+
+.export-controls {
+  position: static;
+  justify-content: flex-start;
+}

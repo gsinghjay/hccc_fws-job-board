@@ -1,0 +1,110 @@
+/*
+Implementation Skeleton v3 - 12/6/18
+Add styles to overwrite customer CSS, USE WITH CAUTION.
+*/
+
+.course_wrapper {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.course_row {
+	width: 100%;
+	padding-bottom: 40px;
+}
+
+.course_description {
+	width: 100%;
+	padding: 20px;
+	background: #f5f5f5;
+}
+
+.course_detail_title {
+	font-weight: bold;
+	float: left;
+	width: 20%;
+}
+
+.course_detail {
+	font-weight: normal;
+	color: #333;
+	float: left;
+	position: relative;
+	display: inline;
+	width: 80%;
+}
+/*
+.program-req-3 {
+	margin: 0 !important;
+	font-weight: bold !important;
+	padding: 3px !important;
+}
+.program-req-4 {
+	margin: 0 !important;
+	padding: 3px !important;
+}
+
+.program-detail-info {
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.program-detail-info dt,
+.program-detail-info dd {
+	font-size: 20px;
+	line-height: 1.2;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.program-detail-info dt {
+	width: 55px;
+	font-weight: 800;
+}
+
+.program-detail-info dd {
+	margin: 0 0 26px;
+	width: calc(100% - 75px);
+	padding: 0 0 0 90px;
+}
+@media (min-width : 700px) {
+	.program-detail-info {
+		margin: 0;
+		margin-top: 10px;
+	}
+	.program-detail-info dt,
+	.program-detail-info dd {
+		font-size: 26px;
+	}
+	.program-detail-info dd {
+		margin: 0 0 24px;
+		padding: 0 0 0 175px;
+	}
+}
+
+*/
+@media (min-width : 1025px) {
+	.program-detail-info {
+		margin: 14px 0 14px;
+		font-size: 30px;
+	}
+	.program-detail-info dt,
+	.program-detail-info dd {
+		font-size: 30px;
+	}
+}
+
+@media (min-width: 1025px) {
+	.catalog--full {
+		padding: 75px 0 25px;
+	}
+}
+
+@media (min-width: 700px){
+	.catalog--full {
+		padding: 75px 0;
+	}
+}
+
+.catalog-course-list .dataTables_wrapper, .catalog-program-list .dataTables_wrapper {
+    margin: 75px 0 20px;
+}

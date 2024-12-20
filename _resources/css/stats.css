@@ -1,0 +1,148 @@
+.responsive-flexbox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.form-group {
+	flex: 1;
+	min-width: calc(33.333% - 10px); /* For 3 columns */
+	max-width: calc(33.333% - 10px); /* For 3 columns */
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+@media (max-width: 768px) {
+	.form-group {
+		min-width: 100%;
+		max-width: 100%;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	.form-group {
+		min-width: calc(50% - 10px); /* For 2 columns */
+		max-width: calc(50% - 10px); /* For 2 columns */
+	}
+}
+
+.stats {
+	margin: 0 -55px 24px -52px;
+	padding: 2.3em 48px;
+	border-bottom: 3px solid #fff;
+	color: #fff;
+	background-color: #2b3990;
+}
+
+.stats__header h2 {
+	text-align: center;
+}
+
+.stats__intro h2 {
+	font-weight: normal; /* unbold this */
+	text-align: center;
+	font-size: 24px;
+}
+
+.stats__intro {
+	font-size: 0.5rem;
+	margin: 0;
+	text-align: center;
+}
+
+.stats__columns {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+	gap: 10px; /* Space between grid items */
+}
+
+.stats__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: start; /* Aligns items to the start of the flex container */
+	align-items: center; /* Centers items horizontally */
+	padding: 15px; /* Add padding for spacing */
+	text-align: center; /* Centers text */
+}
+
+.number-container {
+	display: flex;
+	align-items: baseline;
+}
+
+.number-container > div {
+	font-size: 40px; /* Adjust as necessary */
+	margin-right: 5px; /* Optional spacing */
+}
+
+.number {
+	margin-left: 5px; /* Optional spacing between "Over" and the number */
+	font-size: 2rem; /* Adjust size as needed */
+	margin-bottom: 10px; /* Space between number and progress bar */
+}
+
+.progress-bar {
+	width: 75%; /* Full width of the container */
+	height: 20px; /* Increased height for better visibility */
+	background-color: #1d2974; /* Light background color */
+	border-radius: 20px; /* Rounded corners */
+	box-shadow: inset 0 2px 9px rgba(0, 0, 0, 0.3); /* Inner shadow for depth */
+	overflow: hidden; /* Ensures the inner progress doesn't spill out */
+	margin-bottom: 10px; /* Space between progress bar and caption */
+}
+
+.progress {
+	height: 100%;
+	background: linear-gradient(45deg, #fff200, #fff200); /* Gradient fill */
+	width: 0%; /* Initial width of the progress */
+	border-radius: 20px; /* Match the border-radius of the progress-bar */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow for a raised effect */
+	transition: width 2s ease; /* Smooth transition for animation */
+}
+
+.caption {
+	margin-bottom: 10px; /* Space between caption and link */
+}
+
+.link {
+	color: #fff200;
+	text-decoration: none;
+	position: relative;
+	padding-right: 1.7em;
+}
+
+.link .arrow {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 16px;
+	height: 16px;
+	background-color: #fff200;
+	border-radius: 100%;
+}
+
+.stats__cta a {
+	display: block;
+	width: max-content;
+	margin: 0 auto;
+	background-color: #fff200;
+	color: #000000;
+	padding: 0.55rem 1.2rem;
+	text-decoration: none;
+}
+.number-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.number-container > .number {
+    font-size: 40px; /* Adjust as necessary */
+    margin-right: 5px; /* Optional spacing */
+}
+
+.number-container > .suffix {
+    font-size: 20px; /* Adjust size as needed */
+    color: #fff200; /* Example color */
+    margin-left: 2px; /* Optional spacing */
+}

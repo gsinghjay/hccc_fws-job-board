@@ -1,0 +1,123 @@
+/**
+ * Testimonial Carousel
+ *
+ * https://github.com/gsinghjay/hccc_carousel
+ */
+.hccc-bs-testimonials {
+    /* padding: 2rem 0; */
+    background-color: #2b3990;
+    color: #fff;
+	margin: -54px -13px 0px -13px;
+
+}
+
+/* Image Container */
+.hccc-bs-testimonial-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Testimonial Image */
+.hccc-bs-testimonial-image {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+}
+
+/* Content Area */
+.hccc-bs-testimonial-content {
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 250px;
+}
+
+/* Quote Text */
+.hccc-bs-testimonial-quote {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Author Name */
+.hccc-bs-testimonial-author {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+/* Carousel Container */
+#testimonialCarousel {
+    padding: 0 50px;
+}
+
+/* Carousel Controls */
+#testimonialCarousel .carousel-control-prev,
+#testimonialCarousel .carousel-control-next {
+    width: 40px;
+    opacity: 0.9;
+}
+
+#testimonialCarousel .carousel-control-prev {
+    left: 0;
+}
+
+#testimonialCarousel .carousel-control-next {
+    right: 0;
+}
+
+/* Carousel Indicators */
+#testimonialCarousel .carousel-indicators {
+    bottom: -40px;
+}
+
+#testimonialCarousel .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#testimonialCarousel .carousel-indicators button.active {
+    background-color: #fff;
+}
+
+/* Testimonial Item Container */
+.hccc-bs-testimonial-item {
+    padding: 0 20px;
+    height: 100%;
+    outline: none;
+    border: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hccc-bs-testimonial-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hccc-bs-testimonial-content {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .hccc-bs-testimonial-quote {
+        font-size: 1rem;
+    }
+
+    .hccc-bs-testimonial-author {
+        font-size: 1.1rem;
+    }
+}
+
+/* Carousel Animation */
+.carousel-item {
+    transition: transform .6s ease-in-out;
+}
+
+/* Ensure proper height for carousel */
+.carousel-inner {
+    min-height: 300px;
+}

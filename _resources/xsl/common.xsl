@@ -178,6 +178,10 @@ comments//-->
 			<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/> -->
 			<link href="/_resources/css/timeline-component.css" rel="stylesheet"/>
 		</xsl:if>
+		<xsl:if test="//ouc:component[@label='hccc-fws-jobs']">
+			<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/> -->
+			<link href="/_resources/css/fws_jobs.css" rel="stylesheet"/>
+		</xsl:if>
 		<xsl:if test="$ou:action = 'pub'">
 			<xsl:processing-instruction name="php">
 				if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/ou-alerts/alerts-config.css.html')) {

@@ -488,6 +488,59 @@ This file contains templates and functions that control default behavior for sta
     </script>
 </xsl:template>
 <!-- /HCCC Timeline Component -->
+	
+
+
+<!-- debug(STRUCTURE)
+<xsl:template match="ouc:component[@name='hccc-fws-jobs']">
+    <div>
+        Debug: XML Structure
+        <pre>
+            <xsl:copy-of select="ou:include-file('/_resources/data/fws_jobs.xml')"/>
+        </pre>
+    </div>
+</xsl:template>
+-->
+	
+
+<!-- debug(OUTPUT): FWS Jobs Board Component
+<xsl:template match="ouc:component[@name='hccc-fws-jobs']">
+    <div>
+        Debug: Output of `ou:include-file`:
+        <xsl:copy-of select="ou:include-file('/_resources/data/fws_jobs.xml')"/>
+    </div>
+</xsl:template>
+-->
+
+<!-- FWS Jobs Board Component -->
+<xsl:template match="ouc:component[@name='hccc-fws-jobs']">
+    <xsl:param name="ou:action" />
+    
+    <xsl:choose>
+        <!-- Handle preview, edit, and compare modes -->
+        <xsl:when test="$ou:action='prv' or $ou:action='edt' or $ou:action='cmp'">
+            <xsl:call-template name="dmc">
+                <xsl:with-param name="options">
+                    <datasource>fws_jobs</datasource>
+                    <type>listing</type>
+                    <ou_action><xsl:value-of select="$ou:action"/></ou_action>
+                    <is_staging>true</is_staging>
+                </xsl:with-param>
+                <xsl:with-param name="script-name">fws_jobs</xsl:with-param>
+            </xsl:call-template>
+        </xsl:when>
+        
+        <!-- Handle production mode -->
+        <xsl:otherwise>
+            <xsl:text disable-output-escaping="yes">&lt;?php 
+            require_once($_SERVER['DOCUMENT_ROOT'] . '/_resources/dmc/php/fws_jobs.php');
+            echo get_fws_jobs_dmc_output(array());
+            ?&gt;</xsl:text>
+        </xsl:otherwise>
+    </xsl:choose>
+</xsl:template>
+
+
 
 
 

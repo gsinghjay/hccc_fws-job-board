@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events>
+    <event>
+        <title>Morning Event</title>
+        <description>Test morning event</description>
+        <pubDate>2024-01-01</pubDate>
+        <link>/events/morning-event</link>
+        <startTime>9:00 AM</startTime>
+        <endTime>11:00 AM</endTime>
+        <tbd>0</tbd>
+        <locationName>Room 101</locationName>
+        <eventType>Workshop</eventType>
+        <eventStatus>Confirmed</eventStatus>
+        <registrationRequired>true</registrationRequired>
+    </event>
+    <event>
+        <title>Afternoon Event</title>
+        <description>Test afternoon event</description>
+        <pubDate>2024-01-01</pubDate>
+        <link>/events/afternoon-event</link>
+        <startTime>2:00 PM</startTime>
+        <endTime>4:00 PM</endTime>
+        <tbd>0</tbd>
+        <locationName>Room 102</locationName>
+        <eventType>Seminar</eventType>
+        <eventStatus>Confirmed</eventStatus>
+        <registrationRequired>false</registrationRequired>
+    </event>
+</events>

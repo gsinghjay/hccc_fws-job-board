@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events>
+    <event>
+        <title>Test Event</title>
+        <description>Test event description</description>
+        <pubDate>2024-01-03</pubDate>
+        <link>/events/test-event</link>
+        <startTime>9:00 AM</startTime>
+        <endTime>5:00 PM</endTime>
+        <tbd>0</tbd>
+        <locationName>Test Location</locationName>
+        <eventType>Workshop</eventType>
+        <eventStatus>Tentative</eventStatus>
+        <registrationRequired>true</registrationRequired>
+    </event>
+</events>

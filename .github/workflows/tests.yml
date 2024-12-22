@@ -1,0 +1,43 @@
+name: Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php-versions: ['7.4', '8.0', '8.1']
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: ${{ matrix.php-versions }}
+        extensions: dom, libxml, xsl
+
+    - name: Copy environment file
+      run: cp tests/.env.testing .env
+
+    - name: Install dependencies
+      run: composer install --prefer-dist --no-progress
+
+    - name: Create test directories
+      run: |
+        mkdir -p tests/data/xslt/_shared
+        mkdir -p _resources/data
+        mkdir -p /var/staging/OMNI-INF/stylesheets
+        mkdir -p /var/staging/OMNI-INF/includes
+        mkdir -p /var/staging/OMNI-INF/components
+        chmod -R 777 tests/data
+        chmod -R 777 _resources/data
+        chmod -R 777 /var/staging
+
+    - name: Run test suite
+      run: composer test 

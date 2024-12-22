@@ -123,3 +123,54 @@
 .alert {
     border-radius: 0 !important;
 }
+
+/* Split Editor Layout */
+.split-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.editor-pane {
+    flex: 1;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.preview-pane {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.editor-header,
+.preview-header {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#xmlEditor {
+    flex: 1;
+    min-height: 500px;
+}
+
+#previewContent {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+/* Adjust existing styles for split view */
+.container-fluid {
+    padding: 1rem;
+}
+
+.search-container {
+    margin: 0 0 1rem 0;
+}

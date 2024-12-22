@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events>
+    <event>
+        <title>Test Event</title>
+        <description>Test event description</description>
+        <pubDate>2024-01-01</pubDate>
+        <link>/events/test-event</link>
+        <startTime>10:00 AM</startTime>
+        <endTime>3:00 PM</endTime>
+        <tbd>0</tbd>
+        <locationName>Main Hall</locationName>
+        <eventType>Academic</eventType>
+        <eventStatus>Confirmed</eventStatus>
+        <registrationRequired>false</registrationRequired>
+    </event>
+    <event>
+        <title>All Day Event</title>
+        <description>Test all day event description</description>
+        <pubDate>2024-01-02</pubDate>
+        <link>/events/all-day-event</link>
+        <startTime>All Day</startTime>
+        <endTime>All Day</endTime>
+        <tbd>1</tbd>
+        <locationName>Conference Room</locationName>
+        <eventType>Social</eventType>
+        <eventStatus>Confirmed</eventStatus>
+        <registrationRequired>true</registrationRequired>
+    </event>
+</events>

@@ -1,0 +1,75 @@
+/* Split Editor Layout */
+.split-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.editor-pane {
+    flex: 0 0 35%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ccc;
+    min-width: 200px;
+}
+
+.preview-pane {
+    flex: 0 0 65%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-width: 200px;
+}
+
+.editor-header,
+.preview-header {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#xmlEditor {
+    width: 100% !important;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+#previewContent {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Adjust existing styles for split view */
+.container-fluid {
+    padding: 1rem;
+}
+
+.search-container {
+    margin: 0 0 1rem 0;
+}
+
+/* Add a container for the preview content */
+.preview-content-wrapper {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Resizer styles */
+.resizer {
+    display: none;
+}
+
+/* Prevent text selection while dragging */
+.split-container.dragging {
+    user-select: none;
+    cursor: col-resize;
+    * {
+        pointer-events: none;
+    }
+} 

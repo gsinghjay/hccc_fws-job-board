@@ -1,0 +1,20 @@
+vendor/
+.phpunit.result.cache
+# Cache directories
+.phpunit.cache/
+# Test data files
+_resources/data/*.xml
+
+# Cache directories
+.phpunit.cache/
+.phpunit.result.cache
+
+# IDE and system files
+.idea/
+.vscode/
+*.swp
+*~
+
+# Keep test data directory structure
+!_resources/data/.gitkeep
+empty.xml\nevents.xml\nnonexistent.xml\ntest_events.xml

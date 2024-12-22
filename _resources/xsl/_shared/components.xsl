@@ -514,20 +514,12 @@ This file contains templates and functions that control default behavior for sta
 
 <!-- FWS Jobs Board Component -->
 <xsl:template match="ouc:component[@name='hccc-fws-jobs']">
-    <xsl:param name="ou:action" />
-    
     <xsl:choose>
-        <!-- Handle preview, edit, and compare modes -->
-        <xsl:when test="$ou:action='prv' or $ou:action='edt' or $ou:action='cmp'">
-            <xsl:call-template name="dmc">
-                <xsl:with-param name="options">
-                    <datasource>fws_jobs</datasource>
-                    <type>listing</type>
-                    <ou_action><xsl:value-of select="$ou:action"/></ou_action>
-                    <is_staging>true</is_staging>
-                </xsl:with-param>
-                <xsl:with-param name="script-name">fws_jobs</xsl:with-param>
-            </xsl:call-template>
+        <!-- Handle staging mode -->
+        <xsl:when test="not($ou:action = 'pub')">
+            <div class="alert alert-info" role="alert">
+                <strong>Staging Notice:</strong> This Federal Work Study Jobs component can only be viewed on the production server.
+            </div>
         </xsl:when>
         
         <!-- Handle production mode -->

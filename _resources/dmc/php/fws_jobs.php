@@ -6,83 +6,29 @@ require_once('_core/class.dmc.php');
 class FWSJobsDMC {
     private $dmc;
     private $xml_path;
-    private $is_staging = false;
 
     public function __construct($data_folder = null) {
         $this->dmc = new DMC($data_folder);
         $this->xml_path = $_SERVER['DOCUMENT_ROOT'] . '/_resources/data/fws_jobs.xml';
-        
-        // Simplified environment detection
-        $this->is_staging = false; // Default to production
-        
-        if (isset($_GET['ou_action'])) {
-            $action = $_GET['ou_action'];
-            $this->is_staging = in_array($action, ['prv', 'edt', 'cmp']);
-        }
-        
-        // Debug logging
-        error_log(sprintf(
-            "FWS Jobs DMC:\nHost: %s\nXML Path: %s\nAction: %s\nIs Staging: %s\nFile Exists: %s",
-            $_SERVER['HTTP_HOST'],
-            $this->xml_path,
-            $_GET['ou_action'] ?? 'none',
-            $this->is_staging ? 'Yes' : 'No',
-            file_exists($this->xml_path) ? 'Yes' : 'No'
-        ));
     }
 
     public function get_output($options) {
-        // Consolidate staging detection logic
-        $this->is_staging = false;
-        
-        // Check OU action from GET parameter
-        if (isset($_GET['ou_action'])) {
-            $this->is_staging = in_array($_GET['ou_action'], ['prv', 'edt', 'cmp']);
-        }
-        
-        // Check OU action from options
-        if (isset($options['ou_action'])) {
-            $this->is_staging = $this->is_staging || in_array($options['ou_action'], ['prv', 'edt', 'cmp']);
-        }
-        
-        // Check explicit staging flag
-        if (isset($options['is_staging']) && $options['is_staging'] === 'true') {
-            $this->is_staging = true;
-        }
-        
-        // Add debug logging
-        error_log(sprintf(
-            "FWS Jobs - Staging Detection:\nGET ou_action: %s\nOptions ou_action: %s\nOptions is_staging: %s\nFinal staging status: %s",
-            $_GET['ou_action'] ?? 'none',
-            $options['ou_action'] ?? 'none',
-            $options['is_staging'] ?? 'none',
-            $this->is_staging ? 'Yes' : 'No'
-        ));
-
-        // Always attempt to load XML
+        // Check for XML file
         if (!file_exists($this->xml_path)) {
-            error_log("FWS Jobs - XML not found: " . $this->xml_path);
             return $this->render_error('Job listing data is unavailable.');
         }
 
         $xml_content = file_get_contents($this->xml_path);
         if (!$xml_content) {
-            error_log("FWS Jobs - Failed to read XML");
             return $this->render_error('Unable to load job listings.');
         }
 
         $xml = simplexml_load_string($xml_content);
         if (!$xml) {
-            error_log("FWS Jobs - Failed to parse XML");
             return $this->render_error('Error processing job listings.');
         }
 
-        // Show staging message in preview/edit/compare modes
-        if ($this->is_staging) {
-            return $this->render_staging_message();
-        }
-
-        // Add required dependencies
+        // Add required dependencies and render jobs
         $output = $this->render_dependencies();
         $output .= $this->render_jobs($xml);
         
@@ -94,19 +40,6 @@ class FWSJobsDMC {
         <!-- Bootstrap Icons CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
         ';
-    }
-
-    private function render_staging_message() {
-        return '<div class="hccc-bs">
-            <div class="container-fluid py-4">
-                <div class="alert alert-warning">
-                    <h4 class="alert-heading"><i class="bi bi-exclamation-triangle me-2"></i>Dynamic Content Preview</h4>
-                    <p>This component displays dynamic Federal Work Study job listings that are only visible on the published site.</p>
-                    <hr>
-                    <p class="mb-0">The content is pulled from <code>_resources/data/fws_jobs.xml</code> and rendered using the DMC (Data Management Core).</p>
-                </div>
-            </div>
-        </div>';
     }
 
     private function render_jobs($xml) {

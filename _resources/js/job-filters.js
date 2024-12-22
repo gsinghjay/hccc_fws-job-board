@@ -15,6 +15,7 @@ function initializeFilters() {
     function filterAndSearchJobs() {
         const searchTerm = searchInput.value.toLowerCase();
         const jobCards = document.querySelectorAll('.job-card');
+        let visibleCount = 0;
 
         jobCards.forEach(card => {
             const jobType = card.dataset.jobType;
@@ -25,8 +26,19 @@ function initializeFilters() {
             const matchesFilter = currentFilter === 'all' || jobType === currentFilter;
             const matchesSearch = title.includes(searchTerm) || department.includes(searchTerm);
 
-            card.style.display = matchesSearch && matchesFilter ? 'block' : 'none';
+            // Use data attributes for visibility
+            if (matchesFilter && matchesSearch) {
+                card.setAttribute('data-visible', 'true');
+                card.closest('.col').style.order = visibleCount++;
+            } else {
+                card.setAttribute('data-visible', 'false');
+                card.closest('.col').style.order = '9999';  // Move hidden cards to end
+            }
         });
+
+        // Update container height if needed
+        const container = document.getElementById('jobListings');
+        container.style.minHeight = visibleCount > 0 ? 'auto' : '200px';
     }
 
     // Add event listeners for filter buttons

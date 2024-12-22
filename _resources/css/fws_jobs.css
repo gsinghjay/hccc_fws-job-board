@@ -174,3 +174,44 @@
 .search-container {
     margin: 0 0 1rem 0;
 }
+
+/* Add styles for job card grid layout */
+.job-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Handle visibility for grid layout */
+.job-card[data-visible="false"] {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.job-card[data-visible="true"] {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.2s ease;
+}
+
+/* Ensure grid maintains layout when cards are hidden */
+#jobListings {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Override Bootstrap's row-cols classes */
+.row-cols-1 > * {
+    width: auto;
+    max-width: none;
+}
+
+/* Add transition for smoother repositioning */
+.col {
+    transition: all 0.3s ease;
+}

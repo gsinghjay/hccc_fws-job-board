@@ -166,3 +166,114 @@
    - Optimized search functionality
    - Minified CSS and JavaScript
    - Caching strategies
+
+### Implementation Flow
+
+1. **XML to PHP Transformation Process**
+   - XML source file is processed through XSLT
+   - Components.xsl handles environment detection
+   - DMC (Data Management Core) bridges XML and PHP
+   - Final output rendered through PHP for production
+
+2. **Environment-Specific Processing**
+   ```mermaid
+   graph TD
+       A[XML Source] --> B{Environment Check}
+       B -->|Preview/Edit| C[XSLT Direct]
+       B -->|Production| D[PHP Processing]
+       C --> E[DMC Template]
+       D --> E
+       E --> F[Final Output]
+   ```
+
+3. **Component Integration Flow**
+   - XSLT template defines base structure
+   - Components.xsl handles component matching
+   ```mermaid
+   graph LR
+       A[Component Tag] --> B{Environment?}
+       B -->|Staging| C[DMC Template]
+       B -->|Production| D[PHP Renderer]
+       C --> E[Output]
+       D --> E
+   ```
+
+4. **Data Processing Pipeline**
+   - XML validation
+   - Environment detection
+   - Content transformation
+   - Output generation
+
+5. **Key Integration Points**
+   - XML Source: `_resources/data/fws_jobs.xml`
+   - XSLT Template: `fws_jobs.xslt`
+   - PHP Implementation: `_resources/dmc/php/fws_jobs.php`
+   - Component Definition: `_resources/xsl/_shared/components.xsl`
+
+6. **Modern Campus CMS Integration**
+   - Uses DMC for data management
+   - Supports preview/edit/compare modes
+   - Handles staging vs production environments
+   - Maintains backward compatibility
+
+7. **Development Workflow**
+   ```mermaid
+   graph TD
+       A[Edit XML] --> B[Test in Preview]
+       B --> C{Valid?}
+       C -->|No| A
+       C -->|Yes| D[Commit to Staging]
+       D --> E[Production Deploy]
+   ```
+
+### Technical Architecture
+
+1. **Component Structure**
+   - XML defines data structure
+   - XSLT handles presentation logic
+   - PHP manages server-side processing
+   - JavaScript handles client-side interactions
+
+2. **Environment Detection**
+   - Multiple validation layers
+   - Staging flag checks
+   - Action parameter validation
+   - Environment-specific output
+
+3. **Error Handling**
+   - XML validation
+   - File existence checks
+   - Content processing validation
+   - User-friendly error messages
+
+4. **Performance Optimizations**
+   - Conditional dependency loading
+   - Environment-specific processing
+   - Optimized DOM manipulation
+   - Caching strategies
+
+### Development Guidelines
+
+1. **XML Updates**
+   - Maintain schema compatibility
+   - Follow existing node structure
+   - Include required fields
+   - Validate before deployment
+
+2. **XSLT Modifications**
+   - Test in all environments
+   - Maintain backward compatibility
+   - Follow existing template patterns
+   - Document template changes
+
+3. **PHP Updates**
+   - Follow DMC patterns
+   - Maintain error handling
+   - Log significant operations
+   - Test staging detection
+
+4. **Testing Requirements**
+   - Preview mode validation
+   - Production mode validation
+   - Error scenario testing
+   - Cross-browser compatibility

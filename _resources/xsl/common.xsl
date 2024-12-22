@@ -192,6 +192,8 @@ comments//-->
 		<!-- Local Bootstrap and Carousel CSS -->
 		<link href="/_resources/css/bootstrap.min.css" rel="stylesheet"/>
 		<link href="/_resources/css/testimonial-carousel.css" rel="stylesheet"/>
+		<link href="/_resources/css/fws_jobs.css" rel="stylesheet"/>
+		<link href="/_resources/css/timeline-component.css" rel="stylesheet"/>
 	</xsl:template>
 
 	<xsl:template name="common-alert">

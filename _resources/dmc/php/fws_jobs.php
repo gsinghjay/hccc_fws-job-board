@@ -32,17 +32,31 @@ class FWSJobsDMC {
     }
 
     public function get_output($options) {
-        // Check if we're in preview/edit/compare mode
-        $is_staging = isset($options['is_staging']) && $options['is_staging'] === 'true';
-        $ou_action = isset($options['ou_action']) ? $options['ou_action'] : '';
+        // Consolidate staging detection logic
+        $this->is_staging = false;
         
-        // Update staging flag based on both constructor and options
-        $this->is_staging = $this->is_staging || $is_staging || in_array($ou_action, ['prv', 'edt', 'cmp']);
+        // Check OU action from GET parameter
+        if (isset($_GET['ou_action'])) {
+            $this->is_staging = in_array($_GET['ou_action'], ['prv', 'edt', 'cmp']);
+        }
         
+        // Check OU action from options
+        if (isset($options['ou_action'])) {
+            $this->is_staging = $this->is_staging || in_array($options['ou_action'], ['prv', 'edt', 'cmp']);
+        }
+        
+        // Check explicit staging flag
+        if (isset($options['is_staging']) && $options['is_staging'] === 'true') {
+            $this->is_staging = true;
+        }
+        
+        // Add debug logging
         error_log(sprintf(
-            "FWS Jobs - Mode:\nStaging: %s\nAction: %s",
-            $this->is_staging ? 'Yes' : 'No',
-            $ou_action
+            "FWS Jobs - Staging Detection:\nGET ou_action: %s\nOptions ou_action: %s\nOptions is_staging: %s\nFinal staging status: %s",
+            $_GET['ou_action'] ?? 'none',
+            $options['ou_action'] ?? 'none',
+            $options['is_staging'] ?? 'none',
+            $this->is_staging ? 'Yes' : 'No'
         ));
 
         // Always attempt to load XML

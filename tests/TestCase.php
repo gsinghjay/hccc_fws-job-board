@@ -1,129 +1,148 @@
 <?php
 
+namespace Tests;
+
 use PHPUnit\Framework\TestCase as BaseTestCase;
+use DOMDocument;
+use DOMXPath;
 
 class TestCase extends BaseTestCase
 {
+    protected $resourcesDir;
+    protected $testDataDir;
+
     protected function setUp(): void
     {
         parent::setUp();
         
-        // Set up mock environment variables
-        $_SERVER['DOCUMENT_ROOT'] = PROJECT_ROOT;
-        $_SERVER['SCRIPT_FILENAME'] = __FILE__;
-        $_SERVER['HTTP_HOST'] = 'localhost';
-        $_SERVER['REQUEST_URI'] = '/';
+        $this->resourcesDir = dirname(__DIR__) . '/_resources';
+        $this->testDataDir = dirname(__DIR__) . '/tests/data';
         
-        // Ensure the XML data directory exists
-        $xmlDir = PROJECT_ROOT . '/_resources/data';
-        if (!is_dir($xmlDir)) {
-            mkdir($xmlDir, 0777, true);
+        // Create test data directory if it doesn't exist
+        if (!file_exists($this->testDataDir)) {
+            mkdir($this->testDataDir, 0777, true);
         }
+        
+        // Create subdirectories for different test data
+        $subdirs = ['events', 'calendar', 'xslt'];
+        foreach ($subdirs as $subdir) {
+            $path = $this->testDataDir . '/' . $subdir;
+            if (!file_exists($path)) {
+                mkdir($path, 0777, true);
+            }
+        }
+    }
+
+    protected function createMockDMC(string $className): object
+    {
+        require_once $this->resourcesDir . '/dmc/php/_core/class.dmc.php';
+        $filePath = $this->resourcesDir . "/dmc/php/{$className}.php";
+        require_once $filePath;
+        
+        // Convert filename to class name (e.g., 'events' -> 'EventsDMC', 'fws_jobs' -> 'FWSJobsDMC')
+        $className = str_replace(' ', '', ucwords(str_replace('_', ' ', $className))) . 'DMC';
+        
+        // Create instance with test data folder
+        return new $className($this->testDataDir . '/');
+    }
+
+    protected function createMockXMLFile(string $filename, string $content, string $subdir = ''): string
+    {
+        $targetDir = $this->testDataDir;
+        if ($subdir) {
+            $targetDir .= '/' . trim($subdir, '/');
+            if (!file_exists($targetDir)) {
+                mkdir($targetDir, 0777, true);
+            }
+        }
+        
+        return createTestXMLFile($filename, $content, $targetDir);
+    }
+
+    protected function createMockXSLFile(string $filename, string $content, string $subdir = ''): string
+    {
+        $targetDir = $this->testDataDir;
+        if ($subdir) {
+            $targetDir .= '/' . trim($subdir, '/');
+            if (!file_exists($targetDir)) {
+                mkdir($targetDir, 0777, true);
+            }
+        }
+        
+        return createTestXSLFile($filename, $content, $targetDir);
+    }
+
+    protected function assertXMLEqual(string $expectedXML, string $actualXML, string $message = ''): void
+    {
+        $expected = new DOMDocument();
+        $expected->loadXML($expectedXML);
+        $expected->formatOutput = true;
+        
+        $actual = new DOMDocument();
+        $actual->loadXML($actualXML);
+        $actual->formatOutput = true;
+        
+        $this->assertEquals(
+            $expected->saveXML(),
+            $actual->saveXML(),
+            $message ?: 'Failed asserting that two XML documents are equal.'
+        );
+    }
+
+    protected function assertXPathExists(string $xml, string $xpath): void
+    {
+        $doc = new DOMDocument();
+        $doc->loadXML($xml);
+        $domXPath = new DOMXPath($doc);
+        
+        // Register all namespaces
+        foreach ($doc->documentElement->getNamespaces(true) as $prefix => $uri) {
+            $domXPath->registerNamespace($prefix ?: 'default', $uri);
+        }
+        
+        $this->assertGreaterThan(0, $domXPath->query($xpath)->length, "XPath '$xpath' not found in XML");
+    }
+
+    protected function assertXPathValue(string $xml, string $xpath, string $expectedValue): void
+    {
+        $doc = new DOMDocument();
+        $doc->loadXML($xml);
+        $domXPath = new DOMXPath($doc);
+        
+        // Register all namespaces
+        foreach ($doc->documentElement->getNamespaces(true) as $prefix => $uri) {
+            $domXPath->registerNamespace($prefix ?: 'default', $uri);
+        }
+        
+        $nodes = $domXPath->query($xpath);
+        $this->assertGreaterThan(0, $nodes->length, "XPath '$xpath' not found in XML");
+        $this->assertEquals($expectedValue, $nodes->item(0)->nodeValue);
     }
 
     protected function tearDown(): void
     {
         parent::tearDown();
         
-        // Clean up XML data directory
-        $xmlDir = PROJECT_ROOT . '/_resources/data';
-        if (is_dir($xmlDir)) {
-            array_map('unlink', glob("$xmlDir/*"));
-            rmdir($xmlDir);
+        // Clean up test files
+        if (file_exists($this->testDataDir)) {
+            $this->recursiveDelete($this->testDataDir);
         }
     }
 
-    /**
-     * Create a mock XML file for testing
-     * @param string $filename The name of the XML file to create
-     * @param string $content The XML content
-     * @return string The full path to the created file
-     */
-    protected function createMockXMLFile(string $filename, string $content): string
+    private function recursiveDelete(string $dir): void
     {
-        // Ensure filename has .xml extension
-        if (!str_ends_with($filename, '.xml')) {
-            $filename .= '.xml';
-        }
-        
-        $path = PROJECT_ROOT . '/_resources/data/' . $filename;
-        $dir = dirname($path);
-        
-        if (!is_dir($dir)) {
-            mkdir($dir, 0777, true);
-        }
-        
-        // Ensure the content is valid XML
-        if (!simplexml_load_string($content)) {
-            throw new \RuntimeException('Invalid XML content provided');
-        }
-        
-        if (file_put_contents($path, $content) === false) {
-            throw new \RuntimeException("Failed to write XML file to: $path");
-        }
-        
-        return $path;
-    }
-
-    /**
-     * Clean up mock XML files
-     * @param string $filename The name of the XML file to remove
-     */
-    protected function removeMockXMLFile(string $filename): void
-    {
-        // Ensure filename has .xml extension
-        if (!str_ends_with($filename, '.xml')) {
-            $filename .= '.xml';
-        }
-        
-        $path = PROJECT_ROOT . '/_resources/data/' . $filename;
-        if (file_exists($path)) {
-            unlink($path);
-        }
-    }
-
-    /**
-     * Assert that HTML contains a specific element with attributes
-     * @param string $html The HTML to check
-     * @param string $element The element to look for
-     * @param array $attributes The attributes to check for
-     */
-    protected function assertHtmlContainsElement(string $html, string $element, array $attributes = []): void
-    {
-        $dom = new DOMDocument();
-        @$dom->loadHTML($html, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
-        
-        $xpath = new DOMXPath($dom);
-        
-        $query = "//{$element}";
-        if (!empty($attributes)) {
-            $conditions = [];
-            foreach ($attributes as $attr => $value) {
-                $conditions[] = "@{$attr}='{$value}'";
+        if (is_dir($dir)) {
+            $objects = scandir($dir);
+            foreach ($objects as $object) {
+                if ($object != "." && $object != "..") {
+                    if (is_dir($dir . "/" . $object)) {
+                        $this->recursiveDelete($dir . "/" . $object);
+                    } else {
+                        unlink($dir . "/" . $object);
+                    }
+                }
             }
-            $query .= '[' . implode(' and ', $conditions) . ']';
+            rmdir($dir);
         }
-        
-        $elements = $xpath->query($query);
-        $this->assertGreaterThan(0, $elements->length, "Element {$element} not found with specified attributes");
-    }
-
-    /**
-     * Create a mock DMC class instance
-     * @param string $className The name of the DMC class to mock
-     * @return object The mocked class instance
-     */
-    protected function createMockDMC(string $className): object
-    {
-        require_once PROJECT_ROOT . '/_resources/dmc/php/_core/class.dmc.php';
-        $filePath = PROJECT_ROOT . "/_resources/dmc/php/{$className}.php";
-        require_once $filePath;
-        
-        // Convert filename to class name (e.g., 'events' -> 'EventsDMC', 'fws_jobs' -> 'FWSJobsDMC')
-        $className = str_replace(' ', '', ucwords(str_replace('_', ' ', $className))) . 'DMC';
-        
-        // Create instance with custom data folder
-        $instance = new $className('/_resources/data/');
-        return $instance;
     }
 } 

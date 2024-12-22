@@ -97,4 +97,73 @@ require(['vs/editor/editor.main'], function() {
             // Initial preview update
             updatePreview();
         });
+
+    // Add after existing editor initialization code
+    function initializeEditorToggle() {
+        const editorToggle = document.querySelector('.editor-toggle');
+        const editorPane = document.querySelector('.editor-pane');
+        const editorOverlay = document.querySelector('.editor-overlay');
+        const previewPane = document.querySelector('.preview-pane');
+
+        // Set initial state based on screen width
+        function setInitialState() {
+            if (window.innerWidth > 768) {
+                editorPane.classList.add('active');
+                editorToggle.querySelector('i').classList.remove('bi-list');
+                editorToggle.querySelector('i').classList.add('bi-x-lg');
+            } else {
+                editorPane.classList.remove('active');
+                editorToggle.querySelector('i').classList.remove('bi-x-lg');
+                editorToggle.querySelector('i').classList.add('bi-list');
+            }
+        }
+
+        // Set initial state on load
+        setInitialState();
+
+        function toggleEditor() {
+            editorPane.classList.toggle('active');
+            editorOverlay.classList.toggle('active');
+            
+            // Update toggle button icon
+            const toggleIcon = editorToggle.querySelector('i');
+            if (editorPane.classList.contains('active')) {
+                toggleIcon.classList.remove('bi-list');
+                toggleIcon.classList.add('bi-x-lg');
+            } else {
+                toggleIcon.classList.remove('bi-x-lg');
+                toggleIcon.classList.add('bi-list');
+            }
+        }
+
+        // Toggle editor when hamburger is clicked
+        editorToggle.addEventListener('click', toggleEditor);
+
+        // Close editor when overlay is clicked
+        editorOverlay.addEventListener('click', () => {
+            if (editorPane.classList.contains('active')) {
+                toggleEditor();
+            }
+        });
+
+        // Handle escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && editorPane.classList.contains('active')) {
+                toggleEditor();
+            }
+        });
+
+        // Update editor layout when window resizes
+        let timeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                setInitialState();
+                editor.layout(); // Refresh Monaco editor layout
+            }, 250);
+        });
+    }
+
+    // Call initialization after editor is created
+    initializeEditorToggle();
 }); 

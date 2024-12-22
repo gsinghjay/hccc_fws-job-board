@@ -24,6 +24,7 @@
 .editor-header,
 .preview-header {
     padding: 1rem;
+    padding-left: 3.5rem;
     background-color: #f8f9fa;
     border-bottom: 1px solid #ccc;
     display: flex;
@@ -71,5 +72,103 @@
     cursor: col-resize;
     * {
         pointer-events: none;
+    }
+}
+
+/* Add hamburger button */
+.editor-toggle {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1000;
+    padding: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #2b3990;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style the toggle button icon */
+.editor-toggle i {
+    font-size: 1.25rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .split-container {
+        position: relative;
+    }
+
+    .editor-pane {
+        position: fixed;
+        left: -100%;  /* Hidden by default on mobile */
+        top: 0;
+        bottom: 0;
+        width: 80%;  /* Take up most of the screen when open */
+        z-index: 999;
+        background: white;
+        transition: left 0.3s ease;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+
+    .editor-pane.active {
+        left: 0;  /* Shown when active */
+    }
+
+    .preview-pane {
+        flex: 1;
+        margin-left: 0;
+    }
+
+    /* Add overlay when editor is open */
+    .editor-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 998;
+    }
+
+    .editor-overlay.active {
+        display: block;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+    .editor-pane {
+        position: fixed;
+        left: -35%;  /* Hidden by default */
+        top: 0;
+        bottom: 0;
+        width: 35%;
+        z-index: 999;
+        background: white;
+        transition: left 0.3s ease;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+
+    .editor-pane.active {
+        left: 0;
+    }
+
+    .preview-pane {
+        margin-left: 0;
+        transition: margin-left 0.3s ease;
+    }
+
+    /* Adjust preview pane when editor is active */
+    .editor-pane.active + .resizer + .preview-pane {
+        margin-left: 35%;
     }
 } 

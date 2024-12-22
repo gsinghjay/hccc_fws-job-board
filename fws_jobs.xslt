@@ -68,6 +68,14 @@
                 <script src="_resources/js/xml-editor.js"></script>
             </head>
             <body>
+                <!-- Hamburger button -->
+                <button class="editor-toggle">
+                    <i class="bi bi-list"></i>
+                </button>
+                
+                <!-- Overlay for mobile -->
+                <div class="editor-overlay"></div>
+                
                 <div class="split-container">
                     <!-- Editor Pane -->
                     <div class="editor-pane">

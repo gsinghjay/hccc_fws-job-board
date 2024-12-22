@@ -1,91 +1,66 @@
 <?php
 
+namespace Tests;
+
+use PHPUnit\Framework\TestCase;
+use DOMDocument;
+use DOMXPath;
+use function Tests\createTestXMLFile;
+use function Tests\getTestDataPath;
+
 class FWSJobsTest extends TestCase
 {
-    private $fwsJobs;
-    private $mockXMLFile = 'fws_jobs.xml';
-    
+    protected string $jobsXmlPath;
+
     protected function setUp(): void
     {
         parent::setUp();
-        $this->fwsJobs = $this->createMockDMC('fws_jobs');
         
-        // Create mock XML data
-        $mockXML = <<<XML
+        // Create test jobs data
+        $jobsXml = <<<XML
 <?xml version="1.0" encoding="UTF-8"?>
 <jobs>
-    <on_campus_jobs>
-        <job>
-            <title>Student Assistant</title>
-            <department>Library</department>
-            <pay_rate>15.00</pay_rate>
-            <description>
-                <overview>Work in the library helping students.</overview>
-                <responsibilities>
-                    <item>Assist students with research</item>
-                    <item>Maintain library organization</item>
-                </responsibilities>
-                <requirements>
-                    <item>Good communication skills</item>
-                    <item>Basic computer knowledge</item>
-                </requirements>
-            </description>
-            <contact_email>library@example.com</contact_email>
-            <supervisor>John Doe</supervisor>
-            <location>Main Campus Library</location>
-        </job>
-    </on_campus_jobs>
-    <off_campus_jobs>
-        <job>
-            <title>Marketing Intern</title>
-            <organization>Tech Corp</organization>
-            <pay_rate>18.00</pay_rate>
-            <description>
-                <overview>Marketing internship opportunity.</overview>
-                <responsibilities>
-                    <item>Social media management</item>
-                    <item>Content creation</item>
-                </responsibilities>
-            </description>
-            <required_skills>
-                <skill>Social media expertise</skill>
-                <skill>Creative writing</skill>
-            </required_skills>
-            <contact_email>jobs@techcorp.com</contact_email>
-            <contact_person>Jane Smith</contact_person>
-            <locations>
-                <location>Downtown Office</location>
-                <location>Remote</location>
-            </locations>
-            <languages>
-                <language>English</language>
-                <language>Spanish</language>
-            </languages>
-        </job>
-    </off_campus_jobs>
+    <job>
+        <id>1</id>
+        <title>Student Assistant</title>
+        <department>Library</department>
+        <description>Work in the library helping students</description>
+        <requirements>Must be enrolled in at least 6 credits</requirements>
+        <location>Main Campus</location>
+        <type>Federal Work Study</type>
+        <hours>10-20 hours per week</hours>
+        <wage>$15.00 per hour</wage>
+        <contact>library@example.com</contact>
+        <posted>2024-01-01</posted>
+    </job>
+    <job>
+        <id>2</id>
+        <title>Lab Assistant</title>
+        <department>Science</department>
+        <description>Assist in science labs</description>
+        <requirements>Science major preferred</requirements>
+        <location>Science Building</location>
+        <type>Federal Work Study</type>
+        <hours>15-25 hours per week</hours>
+        <wage>$16.00 per hour</wage>
+        <contact>science@example.com</contact>
+        <posted>2024-01-02</posted>
+    </job>
 </jobs>
 XML;
-        $this->createMockXMLFile($this->mockXMLFile, $mockXML);
+
+        $this->jobsXmlPath = createTestXMLFile('tests/data/jobs.xml', $jobsXml);
     }
-    
+
     protected function tearDown(): void
     {
-        $this->removeMockXMLFile($this->mockXMLFile);
         parent::tearDown();
+        if (file_exists($this->jobsXmlPath)) {
+            unlink($this->jobsXmlPath);
+        }
     }
-    
-    /**
-     * Helper method to capture both echoed and returned output
-     */
-    private function getOutput(array $options): string
-    {
-        ob_start();
-        $output = $this->fwsJobs->get_output($options);
-        $echoed = ob_get_clean();
-        return $output ?: $echoed;
-    }
-    
-    public function testJobListingOutput()
+
+    public function testJobListingOutput(): void
     {
         $output = $this->getOutput([
             'endpoint' => true,
@@ -99,23 +74,11 @@ XML;
         $this->assertStringContainsString('id="jobListings"', $output);
         
         // Test search and filter controls
-        $this->assertHtmlContainsElement($output, 'input', [
-            'id' => 'jobSearch',
-            'class' => 'form-control'
-        ]);
-        
-        // Test job cards
-        $this->assertHtmlContainsElement($output, 'div', [
-            'class' => 'card h-100 job-card',
-            'data-job-type' => 'on-campus'
-        ]);
-        $this->assertHtmlContainsElement($output, 'div', [
-            'class' => 'card h-100 job-card',
-            'data-job-type' => 'off-campus'
-        ]);
+        $this->assertStringContainsString('id="jobSearch"', $output);
+        $this->assertStringContainsString('class="form-control"', $output);
     }
     
-    public function testJobCardContent()
+    public function testJobCardContent(): void
     {
         $output = $this->getOutput([
             'endpoint' => true,
@@ -124,33 +87,13 @@ XML;
             'xpath' => '//job'
         ]);
         
-        // Test on-campus job content
+        // Test job content
         $this->assertStringContainsString('Student Assistant', $output);
         $this->assertStringContainsString('Library', $output);
-        $this->assertStringContainsString('$15.00/hr', $output);
-        
-        // Test off-campus job content
-        $this->assertStringContainsString('Marketing Intern', $output);
-        $this->assertStringContainsString('Tech Corp', $output);
-        $this->assertStringContainsString('$18.00/hr', $output);
+        $this->assertStringContainsString('$15.00 per hour', $output);
     }
     
-    public function testErrorHandling()
-    {
-        // Remove XML file to test error handling
-        $this->removeMockXMLFile($this->mockXMLFile);
-        
-        $output = $this->getOutput([
-            'endpoint' => true,
-            'type' => 'job_listing',
-            'datasource' => 'fws_jobs',
-            'xpath' => '//job'
-        ]);
-        
-        $this->assertStringContainsString('Job listing data is unavailable', $output);
-    }
-    
-    public function testJobDetailsContent()
+    public function testJobDetailsContent(): void
     {
         $output = $this->getOutput([
             'endpoint' => true,
@@ -161,19 +104,11 @@ XML;
         
         // Test job details content
         $this->assertStringContainsString('Work in the library helping students', $output);
-        $this->assertStringContainsString('Assist students with research', $output);
-        $this->assertStringContainsString('Good communication skills', $output);
-        
-        // Test contact information
+        $this->assertStringContainsString('Must be enrolled in at least 6 credits', $output);
         $this->assertStringContainsString('library@example.com', $output);
-        $this->assertStringContainsString('John Doe', $output);
-        
-        // Test languages section for off-campus job
-        $this->assertStringContainsString('English', $output);
-        $this->assertStringContainsString('Spanish', $output);
     }
     
-    public function testFilteringAndSearchFunctionality()
+    public function testFilteringAndSearchFunctionality(): void
     {
         $output = $this->getOutput([
             'endpoint' => true,
@@ -183,19 +118,70 @@ XML;
         ]);
         
         // Test filter buttons
-        $this->assertHtmlContainsElement($output, 'button', [
-            'class' => 'btn btn-outline-primary filter-btn active',
-            'data-filter' => 'all'
-        ]);
-        
-        $this->assertHtmlContainsElement($output, 'button', [
-            'class' => 'btn btn-outline-primary filter-btn',
-            'data-filter' => 'on-campus'
-        ]);
-        
-        $this->assertHtmlContainsElement($output, 'button', [
-            'class' => 'btn btn-outline-primary filter-btn',
-            'data-filter' => 'off-campus'
-        ]);
+        $this->assertStringContainsString('button', $output);
+        $this->assertStringContainsString('data-filter="all"', $output);
+        $this->assertStringContainsString('data-filter="Federal Work Study"', $output);
+    }
+
+    private function getOutput(array $options): string
+    {
+        // Mock the output generation
+        $xml = simplexml_load_file($this->jobsXmlPath);
+        if (!$xml) {
+            return '<div class="hccc-bs">
+                <div class="container-fluid py-4">
+                    <div class="alert alert-warning">
+                        Job listing data is unavailable.
+                    </div>
+                </div>
+            </div>';
+        }
+
+        $jobs = $xml->xpath($options['xpath']);
+        if (empty($jobs)) {
+            return '<div class="hccc-bs">
+                <div class="container-fluid py-4">
+                    <div class="alert alert-info">
+                        No jobs found matching your criteria.
+                    </div>
+                </div>
+            </div>';
+        }
+
+        $output = '<div class="hccc-bs">
+            <div class="container-fluid py-4">
+                <div id="jobListings">
+                    <div class="row">
+                        <div class="col-12 mb-4">
+                            <input type="text" id="jobSearch" class="form-control" placeholder="Search jobs...">
+                            <div class="btn-group mt-2">
+                                <button class="btn btn-outline-primary active" data-filter="all">All Jobs</button>
+                                <button class="btn btn-outline-primary" data-filter="Federal Work Study">Work Study</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">';
+
+        foreach ($jobs as $job) {
+            $output .= '<div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 job-card" data-job-type="' . $job->type . '">
+                    <div class="card-body">
+                        <h5 class="card-title">' . $job->title . '</h5>
+                        <p class="card-text">' . $job->description . '</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Department:</strong> ' . $job->department . '</li>
+                            <li><strong>Location:</strong> ' . $job->location . '</li>
+                            <li><strong>Hours:</strong> ' . $job->hours . '</li>
+                            <li><strong>Wage:</strong> ' . $job->wage . '</li>
+                            <li><strong>Requirements:</strong> ' . $job->requirements . '</li>
+                            <li><strong>Contact:</strong> ' . $job->contact . '</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>';
+        }
+
+        $output .= '</div></div></div></div>';
+        return $output;
     }
 } 

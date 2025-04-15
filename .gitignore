@@ -1,0 +1,13 @@
+.vscode/
+.DS_Store
+
+# copy of timeline.pcf without the header for local preview only
+_resources/data/timeline.xml
+
+# markitdown convert folder
+markitdown/
+
+# personal docs
+docs/
+what_I_want/
+timeline_preview.php

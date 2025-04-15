@@ -532,9 +532,24 @@ This file contains templates and functions that control default behavior for sta
     </xsl:choose>
 </xsl:template>
 
-
-
-
-
+<!-- Timeline Component -->
+<xsl:template match="ouc:component[@name='hccc-timeline']">
+    <xsl:choose>
+        <!-- Handle staging mode -->
+        <xsl:when test="not($ou:action = 'pub')">
+            <div class="alert alert-info" role="alert">
+                <strong>Staging Notice:</strong> This Timeline component can only be viewed on the production server.
+            </div>
+        </xsl:when>
+        
+        <!-- Handle production mode -->
+        <xsl:otherwise>
+            <xsl:text disable-output-escaping="yes">&lt;?php 
+            require_once($_SERVER['DOCUMENT_ROOT'] . '/_resources/dmc/php/timeline.php');
+            echo get_timeline_dmc_output(array());
+            ?&gt;</xsl:text>
+        </xsl:otherwise>
+    </xsl:choose>
+</xsl:template>
 
 </xsl:stylesheet>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/timeline_output.xsl" extension="xml" title="XML Data"?>
+<timeline>
+    <year value="2024">
+        <event>
+            <date>February 12</date>
+            <title>Leader College of Distinction</title>
+            <description>Named by Achieving the Dream</description>
+            <image>https://placehold.co/400x300/00A79D/white?text=Leader+College</image>
+        </event>
+        <event>
+            <date>February 27</date>
+            <title>Bellwether Legacy Award</title>
+            <description>Hudson Scholars Program wins prestigious award</description>
+            <image>https://placehold.co/400x300/00A79D/white?text=Bellwether+Award</image>
+        </event>
+        <event>
+            <date>April 15</date>
+            <title>Innovation Hub Launch</title>
+            <description>Opening of state-of-the-art technology and innovation center</description>
+            <image>https://placehold.co/400x300/00A79D/white?text=Innovation+Hub</image>
+        </event>
+        <event>
+            <date>June 30</date>
+            <title>Global Partnership Initiative</title>
+            <description>Established partnerships with 10 international universities</description>
+            <image>https://placehold.co/400x300/00A79D/white?text=Global+Partnership</image>
+        </event>
+        <event>
+            <date>August 15</date>
+            <title>Sustainability Achievement</title>
+            <description>Received Gold LEED certification for campus buildings</description>
+            <image>https://placehold.co/400x300/00A79D/white?text=Sustainability</image>
+        </event>
+        <event>
+            <date>October 1</date>
+            <title>Research Excellence Award</title>
+            <description>Recognition for outstanding faculty research contributions</description>
+            <image>https://placehold.co/400x300/00A79D/white?text=Research+Excellence</image>
+        </event>
+        <event>
+            <date>December 5</date>
+            <title>Community Impact Recognition</title>
+            <description>Honored for exceptional community engagement programs</description>
+            <image>https://placehold.co/400x300/00A79D/white?text=Community+Impact</image>
+        </event>
+    </year>
+    <year value="2023">
+        <event>
+            <date>Winter</date>
+            <title>Technology Initiative</title>
+            <description>Awarded $2.2 million for technology advancement</description>
+            <image>https://placehold.co/400x300/00A79D/white?text=Technology</image>
+        </event>
+        <event>
+            <date>March 20</date>
+            <title>Arts Center Inauguration</title>
+            <description>Grand opening of new performing arts facility</description>
+            <image>https://placehold.co/400x300/00A79D/white?text=Arts+Center</image>
+        </event>
+        <event>
+            <date>May 15</date>
+            <title>STEM Excellence Award</title>
+            <description>Recognition for innovative STEM education programs</description>
+            <image>https://placehold.co/400x300/00A79D/white?text=STEM+Excellence</image>
+        </event>
+        <event>
+            <date>July 1</date>
+            <title>Healthcare Partnership</title>
+            <description>Launched collaborative healthcare training initiative</description>
+            <image>https://placehold.co/400x300/00A79D/white?text=Healthcare</image>
+        </event>
+        <event>
+            <date>September 10</date>
+            <title>Digital Learning Initiative</title>
+            <description>Implementation of advanced online learning platform</description>
+            <image>https://placehold.co/400x300/00A79D/white?text=Digital+Learning</image>
+        </event>
+        <event>
+            <date>October</date>
+            <title>HACU Recognition</title>
+            <description>Receives Outstanding Member Institution Award</description>
+            <image>https://placehold.co/400x300/00A79D/white?text=HACU+Award</image>
+        </event>
+        <event>
+            <date>November 30</date>
+            <title>Student Success Program</title>
+            <description>Launch of comprehensive student support services</description>
+            <image>https://placehold.co/400x300/00A79D/white?text=Student+Success</image>
+        </event>
+    </year>
+    <year value="2022">
+        <event>
+            <date>September</date>
+            <title>Student Success Center</title>
+            <description>Opening of new Student Success Center</description>
+            <image>https://placehold.co/400x300/00A79D/white?text=Success+Center</image>
+        </event>
+        <event>
+            <date>December</date>
+            <title>Community Recognition</title>
+            <description>Excellence in Community Service Award</description>
+            <image>https://placehold.co/400x300/00A79D/white?text=Community+Award</image>
+        </event>
+    </year>
+</timeline> 

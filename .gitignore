@@ -1,20 +1,13 @@
-vendor/
-.phpunit.result.cache
-# Cache directories
-.phpunit.cache/
-# Test data files
-_resources/data/*.xml
-
-# Cache directories
-.phpunit.cache/
-.phpunit.result.cache
-
-# IDE and system files
-.idea/
 .vscode/
-*.swp
-*~
+.DS_Store
 
-# Keep test data directory structure
-!_resources/data/.gitkeep
-empty.xml\nevents.xml\nnonexistent.xml\ntest_events.xml
+# copy of timeline.pcf without the header for local preview only
+_resources/data/timeline.xml
+
+# markitdown convert folder
+markitdown/
+
+# personal docs
+docs/
+what_I_want/
+timeline_preview.php
